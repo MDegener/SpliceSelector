@@ -1,51 +1,80 @@
 library(DEXSeq)
+library(GenomicRanges)
 
 setwd("/home/maxd/mnt/xomics/SpliceSelector")
 
 source("bin/helperFunctions.R")
 
-splice_events <- read.csv("example/spliceEvents.csv", sep = ";", stringsAsFactors = FALSE)
+species <- "hsapiens"
 
-hg38_coordinates <- liftOverCoordinates(splice_events, "hg18", "hg38")
-
-splice_events$Start <- hg38_coordinates$start
-splice_events$End <- hg38_coordinates$end
-splice_events <- splice_events[, -6]
-splice_events <- splice_events[ multi.mixedorder(splice_events$Chr, splice_events$Start), ]
-
-load("/home/maxd/mnt/xomics/data/results/23012020035247/dexseq/dexseq.RData")
-#load("example/Dexseq.RData")
-dx_results <- as.data.frame(dxr) # Why only data of chromosome x?? (seqnames)
-
-lc_results <- readLeafcutterData("example/leafcutter_ds_effect_sizes.txt",
-                                 "example/leafcutter_ds_cluster_significance.txt")
-
-rm(dxr, hg38_coordinates)
-
-lc_found <- data.frame()
-dx_found <- data.frame()
-
-for( chr in unique(splice_events$Chr) ){
-
-  chr_subset <- splice_events[ splice_events$Chr == chr, ]
-  lc_chr <- lc_results[ lc_results$chr == chr, ]
-  dx_chr <- dx_results[ dx_results$genomicData.seqnames == substring(chr, 4), ]
-    
-  for(i in 1:nrow(chr_subset)){
-
-    min <- chr_subset$Start[i]
-    max <- chr_subset$End[i]
+if (species == "hsapiens"){
+  splice_events <- read.csv("test/hs_spliceEvents.csv", sep = "\t", stringsAsFactors = FALSE)
+  target_assembly <- "hg38"
   
-    lc_start <- as.numeric(levels(lc_chr$start))[lc_chr$start]
-    lc_end <- as.numeric(levels(lc_chr$end))[lc_chr$end]
-    
-    # start/end of exon of interest should lie within intron cluster
-    lc_found <- rbind(lc_found, lc_chr[ which(min >= lc_start && max <= lc_end), ])
-
-    dx_start <- dx_chr$genomicData.start
-    dx_end <- dx_chr$genomicData.end
-    
-    # start/end of exon of interest should contain exon counting bin
-    dx_found <- rbind(dx_found, dx_chr[ which(min <= dx_start && max >= dx_end ), ])
-  }
+} else if (species == "mmusculus"){
+  splice_events <- read.csv("test/mm_spliceEvents.csv", sep = "\t", stringsAsFactors = FALSE)
+  target_assembly <- "mm10"
 }
+
+# remove all commas in start/end position and convert to numeric
+splice_events$Start <- as.numeric(gsub(",", "", splice_events$Start))
+splice_events$End <- as.numeric(gsub(",", "", splice_events$End))
+
+# create GRange object and liftover coordinates if necessary
+if ( any(splice_events$Assembly != target_assembly)) {
+  events_GRange <- liftOverCoordinates(splice_events, unique(splice_events$Assembly), target_assembly)
+  
+} else {
+  events_GRange <- GRanges(seqnames = Rle(df$Chr),
+                           ranges = IRanges(start = splice_events$Start, end = splice_events$End),
+                           strand = Rle(splice_events$Strand),
+                           gene_symbol = splice_events$Symbol)
+  
+  genome(events_GRange) <- unique(splice_events$Assembly)
+}
+
+# load dexseq results
+load(paste0("test/dexseq_", species, ".RData"))
+
+# remove "chr" prefix
+if( !any(grep("chr", levels(seqnames(dxr$genomicData)))) ){
+  seqlevels(events_GRange) <- gsub("chr", "", seqlevels(events_GRange))
+}
+
+# delete all NA rows
+dxr <- dxr[ -which(is.na(dxr$stat)), ]
+
+# get DEXSeq GRange object
+dx_GRange = dxr$genomicData
+
+dx_overlaps <- findOverlaps(query = events_GRange,
+                            subject = dx_GRange,
+                            type = "within")
+
+dxr <- as.data.frame(dxr)
+rownames(dxr) <- make.names(rownames(dxr), unique = TRUE)
+dx_results <- as.data.frame(dxr[ to(dx_overlaps), ])
+
+# # load leafcutter results
+# lc_results <- readLeafcutterResults("test/leafcutter_ds_effect_sizes.txt",
+#                                     "test/leafcutter_ds_cluster_significance.txt")
+# 
+# # create GRange object based on leafcutter results
+# # TODO: add strand info to leafcutter GRange?
+# lc_GRange <- GRanges(seqnames = Rle(gsub("chr", "", lc_results$chr)),
+#                      ranges = IRanges(start = as.numeric(lc_results$start),
+#                                       end = as.numeric(lc_results$end)))
+# 
+# lc_overlaps <- findOverlaps(query = events_GRange,
+#                             subject = lc_GRange, 
+#                             type = "within")
+
+# Features to add:
+# - visualize overlaps (venn diagram)
+# - add gene ontology analysis
+
+# TODO: create GRange object when liftOver is not necessary
+#splice_events <- read.csv("test/mm_spliceEvents.csv", sep = ";", stringsAsFactors = FALSE)
+
+# liftover coordinates and return GRange object
+#events_GRange <- liftOverCoordinates(splice_events, "mm8", "mm10")

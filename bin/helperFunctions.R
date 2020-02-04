@@ -1,41 +1,28 @@
-
-# not written by me 
-# ref: https://stackoverflow.com/questions/20396582/order-a-mixed-vector-numbers-with-letters
-multi.mixedorder <- function(..., na.last = TRUE, decreasing = FALSE){
-  do.call(order, c(
-    lapply(list(...), function(l){
-      if(is.character(l)){
-        factor(l, levels=gtools::mixedsort(unique(l)))
-      } else {
-        factor(as.character(l), levels=gtools::mixedsort(levels(l)))
-      }
-    }),
-    list(na.last = na.last, decreasing = decreasing)
-  ))
+# Get gene annotation based on identifier (e.g. Ensembl gene id) using BioMart Ensembl database
+getBiomaRtAnnotation <- function(identifierList, identifierType, species){
+  library(biomaRt)
+  
+  ensembl <- useMart(biomart="ensembl",dataset=paste0(species,"_gene_ensembl"))
+  
+  geneSymbol <- if (species == "hsapiens") "hgnc_symbol" else if (species == "mmusculus") "mgi_symbol"
+  
+  att <- c("ensembl_gene_id", geneSymbol, "chromosome_name", 
+           "start_position", "end_position", "strand", "description")
+  
+  ann <- getBM(attributes=att, filters=identifierType, values=identifierList, mart=ensembl)
+  
+  return(ann)
 }
 
-### USE SEPARATE FUNCTION INSTEAD (tidyr)
-expandColumn <- function(df, col, sep, names){
-  library(stringr)
-  
-  col_expanded <- data.frame(str_split(df[, col], sep, simplify = TRUE))
-  
-  colnames(col_expanded) <- names
-  
-  df <- cbind(df[, -match(col,names(df))], col_expanded)
-  
-  return(df)
-}
-
-readLeafcutterData <- function(effect_sizes, cluster_significance){
+readLeafcutterResults <- function(effect_sizes, cluster_significance){
+  library(tidyr)
   
   lc_eff <- read.csv(effect_sizes, sep = "\t")
+  lc_eff <- separate(lc_eff, "intron", into = c("chr", "start", "end", "cluster_id"), sep = ":")
+  
   lc_sig <- read.csv(cluster_significance, sep = "\t")
-  
-  lc_eff <- expandColumn(lc_eff, "intron", ":", c("chr", "start", "end", "cluster_id"))
-  
-  lc_sig <- expandColumn(lc_sig, "cluster", ":", c("chr", "cluster_id"))
-  lc_sig <- subset(lc_sig, select=-c(chr))
+  lc_sig <- separate(lc_sig, "cluster", into = c("chr", "cluster_id"), sep = ":")
+  lc_sig <- subset(lc_sig, select= -chr)
   
   lc_results <- merge(lc_eff, lc_sig, by = "cluster_id")
   
@@ -43,6 +30,9 @@ readLeafcutterData <- function(effect_sizes, cluster_significance){
 }
 
 liftOverCoordinates <- function(df, given_assembly, target_assembly){
+  # TODO: add functionality to input multiple assemblies
+  # TODO: use GRange object as input, not dataframe
+  
   library(liftOver)
   
   target_assembly <- (paste0(toupper(substring(target_assembly,1,1)), substring(target_assembly,2)))
@@ -53,6 +43,7 @@ liftOverCoordinates <- function(df, given_assembly, target_assembly){
   chain_url <- paste0("https://hgdownload.soe.ucsc.edu/goldenPath/", 
                       given_assembly,"/liftOver/", chain, ".gz")
   
+  # TODO: Return error if chain file cannot be found
   if (!chain %in% list.files("./lib")){
     download.file(chain_url, destfile = paste0(chain_path, ".gz"), method = "wget", quiet = TRUE)
     R.utils::gunzip(paste0(chain_path, ".gz"), remove = TRUE)
@@ -60,8 +51,15 @@ liftOverCoordinates <- function(df, given_assembly, target_assembly){
   
   chain <- import.chain(chain_path)
   
-  grObject <- GRanges(seqnames = df$Chr, ranges = IRanges(start = df$Start, end = df$End))
+  grObject <- GRanges(seqnames = Rle(df$Chr),
+                      ranges = IRanges(start = df$Start, end = df$End),
+                      strand = Rle(df$Strand),
+                      gene_symbol = df$Symbol
+                      )
   
-  return(as.data.frame(liftOver(grObject, chain)))
-}
+  grObject <- unlist(liftOver(grObject, chain))
 
+  genome(grObject) <- target_assembly
+  
+  return(grObject)
+}
