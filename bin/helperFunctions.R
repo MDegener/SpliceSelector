@@ -29,25 +29,6 @@ readLeafcutterResults <- function(effect_sizes, cluster_significance){
   return(lc_results)
 }
 
-liftOverCoordinates <- function(df, given_assembly, target_assembly){
-  # TODO: add functionality to input multiple assemblies
-  # TODO: use GRange object as input, not dataframe
-  
-  library(liftOver)
-  
-  target_assembly <- (paste0(toupper(substring(target_assembly,1,1)), substring(target_assembly,2)))
-  
-  chain <- paste0(given_assembly, "To", target_assembly, ".over.chain")
-  chain_path <- paste0("lib/", chain)
-  
-  chain_url <- paste0("https://hgdownload.soe.ucsc.edu/goldenPath/", 
-                      given_assembly,"/liftOver/", chain, ".gz")
-  
-  # TODO: Return error if chain file cannot be found
-  if (!chain %in% list.files("./lib")){
-    download.file(chain_url, destfile = paste0(chain_path, ".gz"), method = "wget", quiet = TRUE)
-    R.utils::gunzip(paste0(chain_path, ".gz"), remove = TRUE)
-  }
 createUCSCtrack <- function(grObject, outFile, trackName, trackDescription){
   require(rtracklayer)
 
