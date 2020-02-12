@@ -49,6 +49,14 @@ for (givenAssembly in unique(spliceEvents$Assembly)){
 #                 trackName = "DM1 Mis-Splicing",
 #                 trackDescription = "Putative DM1-related splice events")
 
+### validate exon coordinates
+# source("bin/getOverlap.R")
+# 
+# gc32_gtf <- import("lib/gencode.v32.annotation.gtf")
+# gc32_exons <- subset(gc32_gtf[ which(gc32_gtf$type == "exon") ],
+#                      select = c("gene_id", "transcript_id", "exon_id", "exon_number", "level"))
+# 
+# overlap <- getOverlap(grEvents, gc32_exons)
 
 ######## DEXSEQ ##########
 # # load dexseq results
