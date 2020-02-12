@@ -48,18 +48,23 @@ liftOverCoordinates <- function(df, given_assembly, target_assembly){
     download.file(chain_url, destfile = paste0(chain_path, ".gz"), method = "wget", quiet = TRUE)
     R.utils::gunzip(paste0(chain_path, ".gz"), remove = TRUE)
   }
-  
-  chain <- import.chain(chain_path)
-  
-  grObject <- GRanges(seqnames = Rle(df$Chr),
-                      ranges = IRanges(start = df$Start, end = df$End),
-                      strand = Rle(df$Strand),
-                      gene_symbol = df$Symbol
-                      )
-  
-  grObject <- unlist(liftOver(grObject, chain))
+createUCSCtrack <- function(grObject, outFile, trackName, trackDescription){
+  require(rtracklayer)
 
-  genome(grObject) <- target_assembly
+  # create output file
+  file.create(outFile)
   
-  return(grObject)
+  # open connection to file
+  fileConn<- file(outFile)
+  
+  # export UCSC track as .bed file and add trackLine
+  export.ucsc(grObject, con = fileConn, subformat = "BED", 
+              name = trackName,
+              description = trackDescription,
+              visibility = "2",
+              priority = 1)
+  
+  # Probably not necessary because "export.ucsc" already closes file connection
+  #close(fileConn)
 }
+

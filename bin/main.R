@@ -35,6 +35,11 @@ if ( any(splice_events$Assembly != target_assembly)) {
 
 # load dexseq results
 load(paste0("test/dexseq_", species, ".RData"))
+### create custom UCSC track
+# createUCSCtrack(grEvents, 
+#                 outFile = paste0("test/", target_assembly,"_UCSC_customTrack.bed"),
+#                 trackName = "DM1 Mis-Splicing",
+#                 trackDescription = "Putative DM1-related splice events")
 
 # remove "chr" prefix
 if( !any(grep("chr", levels(seqnames(dxr$genomicData)))) ){
