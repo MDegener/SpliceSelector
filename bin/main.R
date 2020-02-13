@@ -1,3 +1,9 @@
+# TODO:
+# - create proper R package
+# - look into "GeneStructureTools"
+# - visualize overlaps (venn diagram)
+# - add gene ontology analysis
+
 library(DEXSeq)
 
 setwd("/home/maxd/mnt/xomics/SpliceSelector")
@@ -44,8 +50,8 @@ for (givenAssembly in unique(spliceEvents$Assembly)){
 }
 
 ### create custom UCSC track
-# createUCSCtrack(grEvents, 
-#                 outFile = paste0("test/", target_assembly,"_UCSC_customTrack.bed"),
+# createUCSCtrack(grEvents,
+#                 outFile = paste0("test/", targetAssembly,"_UCSC_customTrack.bed"),
 #                 trackName = "DM1 Mis-Splicing",
 #                 trackDescription = "Putative DM1-related splice events")
 
@@ -97,13 +103,3 @@ for (givenAssembly in unique(spliceEvents$Assembly)){
 # lc_overlaps <- findOverlaps(query = grEvents,
 #                             subject = grLC, 
 #                             type = "within")
-
-# Features to add:
-# - visualize overlaps (venn diagram)
-# - add gene ontology analysis
-
-# TODO: create GRange object when liftOver is not necessary
-#spliceEvents <- read.csv("test/mm_spliceEvents.csv", sep = ";", stringsAsFactors = FALSE)
-
-# liftover coordinates and return GRange object
-#grEvents <- liftOverCoordinates(spliceEvents, "mm8", "mm10")
