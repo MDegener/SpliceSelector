@@ -1,4 +1,4 @@
-# TODO: split barplot (first two bars / last four bars)
+# ADD DESCRIPTION
 
 getOverlap <- function(grObject, exonAnnotation){
   
@@ -29,6 +29,11 @@ getOverlap <- function(grObject, exonAnnotation){
     
     if( length(exactOverlap) != 0 ){
       
+      # remove redundant exact matches from withinOverlap, spanOverlap and anyOverlap
+      withinOverlap <- withinOverlap[ -which(withinOverlap %in% exactOverlap) ]
+      spanOverlap <- spanOverlap[ -which(spanOverlap %in% exactOverlap) ] 
+      anyOverlap <- anyOverlap[ -which(anyOverlap %in% exactOverlap) ]
+      
       # save matches in dataframe and annotate with its specific type
       overlap <- bind_rows(overlap, data.frame(overlap = "equal",
                                                query.index = from(exactOverlap),
@@ -36,35 +41,47 @@ getOverlap <- function(grObject, exonAnnotation){
                                                annotation.index = to(exactOverlap),
                                                annotation = exonAnnotation[ to(exactOverlap) ],
                                                stringsAsFactors = FALSE))
-      
-      # remove redundant exact matches from withinOverlap, spanOverlap and anyOverlap
-      withinOverlap <- withinOverlap[ -which(withinOverlap %in% exactOverlap) ]
-      spanOverlap <- spanOverlap[ -which(spanOverlap %in% exactOverlap) ] 
-      anyOverlap <- anyOverlap[ -which(anyOverlap %in% exactOverlap) ]
     }
     
     if( length(withinOverlap) != 0 ){
+      
+      # remove redundant within matches from anyOverlap
+      anyOverlap <- anyOverlap[ -which(anyOverlap %in% withinOverlap) ]
+      
       overlap <- bind_rows(overlap, data.frame(overlap = "within",
                                                query.index = from(withinOverlap),
                                                query = grObject[ from(withinOverlap) ], 
                                                annotation.index = to(withinOverlap),
                                                annotation = exonAnnotation[ to(withinOverlap) ],
                                                stringsAsFactors = FALSE))
-      
-      # remove redundant within matches from anyOverlap
-      anyOverlap <- anyOverlap[ -which(anyOverlap %in% withinOverlap) ]
     }
     
     if( length(spanOverlap) != 0 ){
-      overlap <- bind_rows(overlap, data.frame(overlap = "spans",
-                                               query.index = from(spanOverlap),
-                                               query = grObject[ from(spanOverlap) ],
-                                               annotation.index = to(spanOverlap),
-                                               annotation = exonAnnotation[ to(spanOverlap) ],
-                                               stringsAsFactors = FALSE))
       
       # remove redundant spanning matches from anyOverlap
       anyOverlap <- anyOverlap[ -which(anyOverlap %in% spanOverlap) ]
+      
+      # first store spanOverlap in dataframe to allow easy access to annotation
+      spanOverlap <- data.frame(overlap = "",
+                                query.index = from(spanOverlap),
+                                query = grObject[ from(spanOverlap) ],
+                                annotation.index = to(spanOverlap),
+                                annotation = exonAnnotation[ to(spanOverlap) ],
+                                stringsAsFactors = FALSE)
+      
+      # distinguish coordinates that span one or multiple exons
+      spanMatches <- spanOverlap %>% group_by(query.index) %>% summarise(n_distinct(annotation.exon_id))
+      spanOverlap$overlap <- map_chr(spanOverlap$query.index, 
+                                     function( queryIndex ) {
+                                       # check if number of span matches is equal to 1 for a given query
+                                       if ( spanMatches[ queryIndex == spanMatches$query.index, 2] == 1){
+                                         "spans one" 
+                                       } else {
+                                         "spans multiple"
+                                       }
+                                     })
+
+      overlap <- bind_rows(spanOverlap)
     }
     
     # save matches that are neither exact, within or spanning
@@ -88,23 +105,43 @@ getOverlap <- function(grObject, exonAnnotation){
   # remove duplicate rows
   overlap <- unique(overlap)
   
-  # get counts for input coordinates, all detected matches and all overlap types
-  counts <- c( grObject %>% length(),
-               overlap[which(overlap$overlap != "none"), ] %>% nrow(),
-               overlap[which(overlap$overlap == "equal"), ] %>% nrow(),
-               overlap[which(overlap$overlap == "within"), ] %>% nrow(),
-               overlap[which(overlap$overlap == "spans"), ] %>% nrow(),
-               overlap[which(overlap$overlap == "other"), ] %>% nrow(),
-               overlap[which(overlap$overlap == "none"), ] %>% nrow())
+  # get number of exon matches per input coordinates
+  overlap %>%
+    group_by(query.index) %>%
+    summarise(n_distinct(annotation.exon_id)) -> exonMatches
+
+  # get unique matches of input coordinates to an exon
+  uniqueMatches <- sum( exonMatches[, 2] == 1)
   
+  # ADD COMMENT
+  matchCounts <- c(overlap$query.index %>% unique() %>% length(),
+                   overlap[which(overlap$overlap != "none"), ] %>% nrow(),
+                   uniqueMatches,
+                   overlap[which(overlap$overlap == "none"), ] %>% nrow())
+  
+  # ADD COMMENT
+  plot <- barplot(height = matchCounts,
+                  names = c("Input", "All Matches", "Unique", "No Match"),
+                  ylab = "Count",
+                  ylim = c(0, 1.1*max(matchCounts)))
+  
+  text(x = plot, y = matchCounts, label = matchCounts, pos = 3, cex = 1)
+  
+  # get counts for all overlap types
+  overlapCounts <- c(overlap[which(overlap$overlap == "equal"), ] %>% nrow(),
+                     overlap[which(overlap$overlap == "within"), ] %>% nrow(),
+                     overlap[which(overlap$overlap == "spans one"), ] %>% nrow(),
+                     overlap[which(overlap$overlap == "spans multiple"), ] %>% nrow(),
+                     overlap[which(overlap$overlap == "other"), ] %>% nrow())
+
   # plot counts for every type of overlap
-  plot <- barplot(height = counts,
-                  names = c("Input", "Matches", "Equal", "Within", "Spans", "Other", "None"),
+  plot <- barplot(height = overlapCounts,
+                  names = c("Equal", "Within", "Spans One", "Spans Multiple", "Other"),
                   xlab = "Type of Overlap",
                   ylab = "Count",
-                  ylim = c(0, 1.1*max(counts)))
+                  ylim = c(0, 1.1*max(overlapCounts)))
   
-  text(x = plot, y = counts, label = counts, pos = 3, cex = 1)
+  text(x = plot, y = overlapCounts, label = overlapCounts, pos = 3, cex = 1)
   
   return(overlap)
 }
