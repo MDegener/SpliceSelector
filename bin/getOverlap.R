@@ -4,6 +4,7 @@ getOverlap <- function(grObject, exonAnnotation){
   
   library(rtracklayer)
   library(dplyr)
+  library(purrr)
   
   # find coordinates that overlap with an annotated exon in any way
   anyOverlap <- findOverlaps(grObject, exonAnnotation, type = "any")
@@ -81,7 +82,7 @@ getOverlap <- function(grObject, exonAnnotation){
                                        }
                                      })
 
-      overlap <- bind_rows(spanOverlap)
+      overlap <- bind_rows(overlap, spanOverlap)
     }
     
     # save matches that are neither exact, within or spanning
