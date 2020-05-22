@@ -1,10 +1,12 @@
-# ADD DESCRIPTION
+# compares supplied coordinates with coordinates from an exon annotation file (e.g. GENCODE .gtf)
+# creates a table listing all overlapping coordinates with their corresponding overlap type
 
 getOverlap <- function(grObject, exonAnnotation){
-  
-  library(rtracklayer)
-  library(dplyr)
-  library(purrr)
+ 
+  require(rtracklayer)
+  require(dplyr)
+  require(purrr)
+  require(data.table)
   
   # find coordinates that overlap with an annotated exon in any way
   anyOverlap <- findOverlaps(grObject, exonAnnotation, type = "any")
@@ -71,16 +73,9 @@ getOverlap <- function(grObject, exonAnnotation){
                                 stringsAsFactors = FALSE)
       
       # distinguish coordinates that span one or multiple exons
-      spanMatches <- spanOverlap %>% group_by(query.index) %>% summarise(n_distinct(annotation.exon_id))
-      spanOverlap$overlap <- map_chr(spanOverlap$query.index, 
-                                     function( queryIndex ) {
-                                       # check if number of span matches is equal to 1 for a given query
-                                       if ( spanMatches[ queryIndex == spanMatches$query.index, 2] == 1){
-                                         "spans one" 
-                                       } else {
-                                         "spans multiple"
-                                       }
-                                     })
+      spanMatches <- spanOverlap %>% group_by(query.index) %>% count(annotation.exon_id) %>% summarise(sum(n))
+      spanOverlap$overlap <- ifelse(spanMatches[ match(spanOverlap$query.index, spanMatches$query.index), 2] == 1,
+                                    "spans one", "spans multiple")
 
       overlap <- bind_rows(overlap, spanOverlap)
     }
