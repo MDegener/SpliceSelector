@@ -1,0 +1,870 @@
+Symbol	Chr	Start	End	Strand	Assembly	Tissue
+KLF8	chrX	56295346	56295424	+	hg19	heart
+TOM1L1	chr11	71723447	71723488	-	hg19	heart
+NUMA1	chr10	88445435	88445457	+	hg19	heart
+WARS	chr1	37962308	37962337	-	hg19	heart
+LDB3	chr2	204261508	204261690	+	hg19	heart
+C1orf38	chr10	97131083	97131184	-	hg19	heart
+MEAF6	chr2	216257654	216257926	-	hg19	heart
+ADAM15	chr20	43681727	43681821	+	hg19	heart
+SORBS2	chr2	182981934	182982195	+	hg19	heart
+ABI2	chr15	49923198	49923255	+	hg19	heart
+SORBS1	chr10	97110973	97111133	-	hg19	heart
+FN1	chr9	13143465	13143563	-	hg19	heart
+STK4	chr5	171384601	171384702	-	hg19	heart
+PPP1R1C	chr18	3129230	3129517	-	hg19	heart
+DTWD1	chr11	57193014	57193182	-	hg19	heart
+PPARA	chr6	152466622	152466690	-	hg19	heart
+SORBS1	chr12	48543870	48543923	-	hg19	heart
+MPDZ	chr7	105289854	105290007	-	hg19	heart
+RAP1GDS1	chr14	91614125	91614202	+	hg19	heart
+TOM1L1	chr12	989887	990165	+	hg19	heart
+FBXW11	chr1	17939553	17939669	+	hg19	heart
+ESRRG	chr3	197607383	197607628	+	hg19	heart
+MYOM1	chr1	201338944	201338973	-	hg19	heart
+SLC43A3	chr5	141359688	141359916	+	hg19	heart
+SYNE1	chr5	88057086	88057145	-	hg19	heart
+FAM192A	chr1	156450435	156450569	-	hg19	heart
+ASB8	chr1	159019222	159019389	+	hg19	heart
+PDLIM3	chr1	38046943	38047146	-	hg19	heart
+ATXN7L1	chr4	186435857	186436044	-	hg19	heart
+C14orf159	chr20	3306231	3306406	-	hg19	heart
+MOK	chr13	111944465	111944641	+	hg19	heart
+FAM192A	chr19	13189427	13189549	+	hg19	heart
+WNK1	chrX	135290614	135290800	+	hg19	heart
+PDE4DIP	chr5	171384601	171384702	-	hg19	heart
+CEP57L1	chr13	75898373	75898537	-	hg19	heart
+CACNA1C	chr6	152621776	152621916	-	hg19	heart
+ARHGEF10L	chr1	3348530	3348704	+	hg19	heart
+LRCH3	chr7	889157	889240	+	hg19	heart
+TNNT2	chr12	131453522	131453617	+	hg19	heart
+RNF14	chr13	98018713	98018807	+	hg19	heart
+MEF2C	chr15	100260989	100261171	-	hg19	heart
+NCOA3	chr10	97110966	97111133	-	hg19	heart
+MEF2D	chr2	191213614	191213757	+	hg19	heart
+IFI16	chr13	98018713	98018807	+	hg19	heart
+ARPC4-TTLL3	chr8	38287200	38287466	-	hg19	heart
+GNL2	chr4	186435424	186435491	-	hg19	heart
+PDLIM3	chr1	159015087	159015254	+	hg19	heart
+C20orf194	chr9	13143465	13143563	-	hg19	heart
+ARHGEF7	chr1	155033894	155033965	+	hg19	heart
+NFIX	chr4	186559233	186559316	-	hg19	heart
+MBNL2	chr17	8479961	8479990	-	hg19	heart
+TMEM14B	chr12	123960210	123960297	-	hg19	heart
+FHL1	chr22	46572650	46572733	+	hg19	heart
+CLASP1	chr3	37402734	37402796	+	hg19	heart
+ANK3	chr13	42795298	42795530	+	hg19	heart
+WARS	chr17	48246453	48246615	+	hg19	heart
+ZNF124	chr16	24950685	24950918	-	hg19	heart
+FBXW11	chr7	90095724	90095827	+	hg19	heart
+TBC1D4	chr7	18582792	18583297	+	hg19	heart
+SYNE1	chr4	186605908	186606000	-	hg19	heart
+CELF1	chr17	1550200	1550283	-	hg19	heart
+PRDM16	chr1	155209677	155209753	-	hg19	heart
+PDLIM3	chr1	12398288	12398362	+	hg19	heart
+ADAM15	chr10	31199289	31199369	-	hg19	heart
+SUN1	chr9	35401948	35402004	+	hg19	heart
+GPR133	chr12	54118369	54118531	-	hg19	heart
+MBNL2	chr10	116245056	116245139	-	hg19	heart
+WASF3	chr3	145968344	145968424	-	hg19	heart
+LYSMD4	chr10	75871667	75871870	+	hg19	heart
+SORBS1	chr8	17581181	17581342	-	hg19	heart
+TRAPPC12	chr10	6010739	6010891	-	hg19	heart
+INPP1	chr3	176849151	176849237	-	hg19	heart
+TNNT2	chr11	63671458	63671625	+	hg19	heart
+FAM46A	chr1	155033894	155033965	+	hg19	heart
+PDLIM3	chr16	20913808	20914039	+	hg19	heart
+NBPF14	chr17	8479961	8479987	-	hg19	heart
+EBF1	chr10	61926349	61926411	-	hg19	heart
+IFI16	chr6	139247538	139247615	-	hg19	heart
+IARS	chr12	32890799	32890876	+	hg19	heart
+MPDZ	chr13	76412276	76412332	+	hg19	heart
+ADAM15	chr2	216236632	216237098	-	hg19	heart
+SORBS2	chr1	201338944	201338973	-	hg19	heart
+MYH10	chr18	47801740	47801814	-	hg19	heart
+RILPL1	chr15	43857065	43857190	-	hg19	heart
+PPARA	chr10	48774225	48774376	-	hg19	heart
+GOLGA4	chr1	227406964	227407121	-	hg19	heart
+DGKH	chr15	75193510	75193597	-	hg19	heart
+GON4L	chr5	16090998	16091190	-	hg19	heart
+SGCA	chr3	98489965	98490034	+	hg19	heart
+ARHGAP17	chr4	186559233	186559316	-	hg19	heart
+MEAF6	chr17	3550738	3550816	+	hg19	heart
+MFF	chr11	76705200	76705270	+	hg19	heart
+CLDN12	chr10	88466288	88466476	+	hg19	heart
+HDAC9	chr10	97175226	97175942	-	hg19	heart
+SORBS2	chr17	8479943	8479990	-	hg19	heart
+RILP	chr14	104196130	104196183	+	hg19	heart
+GBA	chr17	74679929	74680009	-	hg19	heart
+LDB3	chr19	48741640	48741789	-	hg19	heart
+ZNF438	chr16	15802660	15802698	-	hg19	heart
+UNC13B	chr13	42795400	42795530	+	hg19	heart
+CALCOCO1	chr16	21172299	21172329	+	hg19	heart
+CDK14	chr1	201338944	201338970	-	hg19	heart
+MRVI1	chr6	139247538	139247618	-	hg19	heart
+TCF4	chr5	138532130	138532217	-	hg19	heart
+SSR2	chr13	98009050	98009103	+	hg19	heart
+ABLIM1	chr3	152174056	152174150	+	hg19	heart
+GTF2A2	chr11	74876832	74876994	+	hg19	heart
+PLSCR4	chr12	1519555	1519619	+	hg19	heart
+VCL	chr4	186605908	186605996	-	hg19	heart
+BACH2	chr14	57059833	57060035	+	hg19	heart
+MTUS1	chr17	80352207	80352419	-	hg19	heart
+MTM1	chr11	63671458	63671619	+	hg19	heart
+IL15RA	chr17	41909445	41909619	-	hg19	heart
+TBL1XR1	chr2	216236632	216237023	-	hg19	heart
+MRVI1	chr3	41265681	41265812	+	hg19	heart
+ST5	chr10	97131083	97131184	-	hg19	heart
+TPM2	chr16	77769725	77769883	+	hg19	heart
+C6orf136	chr5	171384601	171384702	-	hg19	heart
+BC017818	chr10	88446826	88447029	+	hg19	heart
+ALG9	chr12	31457916	31458057	-	hg19	heart
+MARK2	chr16	18911309	18911366	-	hg19	heart
+ADAM15	chr11	85428526	85428769	-	hg19	heart
+AGPAT1	chr7	128394316	128394509	+	hg19	heart
+MEF2C	chr12	31457920	31458057	-	hg19	heart
+ADAM15	chr2	102480283	102480513	+	hg19	heart
+LYRM1	chr7	55629673	55629744	-	hg19	heart
+MYH10	chr20	34761686	34761876	+	hg19	heart
+ANK3	chr4	186605908	186606000	-	hg19	heart
+REPS1	chr11	44962554	44962628	-	hg19	heart
+MRVI1	chr12	10862507	10862713	-	hg19	heart
+DNM1L	chr3	152164493	152164546	+	hg19	heart
+LMO7	chr4	55106205	55106282	+	hg19	heart
+FN1	chr4	186435424	186435491	-	hg19	heart
+TNNT2	chr4	186559233	186559316	-	hg19	heart
+MBD1	chr2	204261607	204261690	+	hg19	heart
+ADAM15	chr6	30618771	30618877	+	hg19	heart
+PPIP5K1	chr12	50052225	50052377	-	hg19	heart
+PTPN20B	chr1	42671433	42671534	-	hg19	heart
+CDC42BPA	chr4	114424092	114424133	-	hg19	heart
+C15orf17	chr4	186435857	186436044	-	hg19	heart
+MARCH11	chr11	85422156	85422275	-	hg19	heart
+MAPK8IP3	chr11	85342189	85342360	+	hg19	heart
+ST3GAL6	chr12	2789529	2789741	+	hg19	heart
+GATS	chr2	179620949	179621524	-	hg19	tibialis anterior
+TTN	chr14	93730131	93730339	-	hg19	tibialis anterior
+BTBD7	chr8	74621267	74621397	-	hg19	tibialis anterior
+STAU2	chr5	88057002	88057145	-	hg19	tibialis anterior
+MEF2C	chr1	39902154	39902162	+	hg19	tibialis anterior
+MACF1	chr1	99203793	99203945	+	hg19	tibialis anterior
+SNX7	chr1	193029004	193029352	+	hg19	tibialis anterior
+TROVE2	chr7	30591716	30591795	-	hg19	tibialis anterior
+LOC401320	chr11	71723447	71723488	-	hg19	tibialis anterior
+NUMA1	chr17	60766732	60766798	+	hg19	tibialis anterior
+E2F8	chr10	81568519	81568719	-	hg19	tibialis anterior
+MRC2	chr1	55051508	55051577	+	hg19	tibialis anterior
+BRWD3	chr8	25303596	25303766	-	hg19	tibialis anterior
+n/a	chr14	101311503	101311614	+	hg19	tibialis anterior
+ACOT11	chr3	48962151	48962272	+	hg19	tibialis anterior
+KCTD9	chr10	97174251	97174412	-	hg19	tibialis anterior
+MEG3	chr19	14655926	14655992	+	hg19	tibialis anterior
+ARIH2	chr5	111497400	111497472	+	hg19	tibialis anterior
+SORBS1	chr10	15880227	15880278	-	hg19	tibialis anterior
+KIAA1191	chr12	1010727	1010819	+	hg19	tibialis anterior
+TECR	chr2	230725122	230725247	-	hg19	tibialis anterior
+EPB41L4A-AS1	chr1	78963559	78963629	+	hg19	tibialis anterior
+LYRM1	chr19	39389434	39389558	-	hg19	tibialis anterior
+BC021234	chr3	46305878	46305937	+	hg19	tibialis anterior
+FAM188A	chr11	111659165	111659293	-	hg19	tibialis anterior
+WNK1	chr1	231092167	231092306	-	hg19	tibialis anterior
+KIF21A	chr16	87795555	87795642	-	hg19	tibialis anterior
+TRIP12	chr7	123252330	123252454	+	hg19	tibialis anterior
+CLCN1	chr12	49399526	49399635	-	hg19	tibialis anterior
+PTGFR	chr3	193335573	193335626	+	hg19	tibialis anterior
+ZCCHC10	chr11	12900436	12900447	+	hg19	tibialis anterior
+SIRT2	chr22	46584620	46584719	+	hg19	tibialis anterior
+PHKB	chr6	54013854	54013925	+	hg19	tibialis anterior
+CCR3	chr1	144604478	144604508	+	hg19	tibialis anterior
+ALG9	chr1	78390873	78390914	+	hg19	tibialis anterior
+TTC13	chr10	75279555	75279750	-	hg19	tibialis anterior
+KLHDC4	chr2	204261508	204261690	+	hg19	tibialis anterior
+VPS13D	chr14	75290959	75291010	+	hg19	tibialis anterior
+ASB15	chr19	7150508	7150543	-	hg19	tibialis anterior
+PRKAG1	chr10	97131083	97131184	-	hg19	tibialis anterior
+OPA1	chr22	18367041	18367124	-	hg19	tibialis anterior
+TEAD1	chr1	19669246	19669358	-	hg19	tibialis anterior
+SLC16A3	chr10	283525	283617	+	hg19	tibialis anterior
+PPARA	chr2	73961655	73961718	-	hg19	tibialis anterior
+BEST3	chr1	171751128	171751260	+	hg19	tibialis anterior
+MLIP	chrX	71821841	71821879	-	hg19	tibialis anterior
+BARD1	chr10	75599297	75599359	-	hg19	tibialis anterior
+ITGA7	chr8	71056877	71057083	-	hg19	tibialis anterior
+NBPF9	chr19	37252545	37252640	-	hg19	tibialis anterior
+NEXN	chr11	70267576	70267686	+	hg19	tibialis anterior
+USP54	chr10	99213556	99213603	+	hg19	tibialis anterior
+ABI2	chr5	149619267	149619299	-	hg19	tibialis anterior
+YLPM1	chr18	5539620	5539697	-	hg19	tibialis anterior
+INSR	chr13	99498178	99498314	-	hg19	tibialis anterior
+SORBS1	chr1	52205815	52205883	+	hg19	tibialis anterior
+MICAL3	chr17	21114380	21114540	-	hg19	tibialis anterior
+CAPZB	chr3	58127585	58127623	+	hg19	tibialis anterior
+ZMYND11	chr3	182603739	182603798	+	hg19	tibialis anterior
+TPRKB	chr10	97110973	97111133	-	hg19	tibialis anterior
+KIAA1109	chr4	431235	431300	-	hg19	tibialis anterior
+METTL13	chr10	27462047	27462188	+	hg19	tibialis anterior
+PHKA1	chr10	24911662	24911691	-	hg19	tibialis anterior
+CAMK2G	chr1	26128507	26128608	+	hg19	tibialis anterior
+NR2C1	chr15	99544416	99544508	-	hg19	tibialis anterior
+NCOA2	chr2	36781313	36781405	-	hg19	tibialis anterior
+n/a	chr19	37482078	37482201	+	hg19	tibialis anterior
+GPS2	chr2	74666678	74667104	-	hg19	tibialis anterior
+CTTN	chr20	47782534	47782822	-	hg19	tibialis anterior
+ZDHHC16	chr4	123147862	123147990	+	hg19	tibialis anterior
+CAMK2A	chr17	17046870	17046983	+	hg19	tibialis anterior
+KARS	chr14	61500737	61500831	+	hg19	tibialis anterior
+EPB41L3	chrX	31196049	31196087	-	hg19	tibialis anterior
+DOCK9	chr3	9471511	9471735	+	hg19	tibialis anterior
+OSBPL9	chr15	20706799	20706967	-	hg19	tibialis anterior
+TMEM11	chr10	61813435	61813485	-	hg19	tibialis anterior
+DCTN1	chr6	153312320	153312456	-	hg19	tibialis anterior
+FLNB	chr8	74621267	74621397	-	hg19	tibialis anterior
+PPARA	chr18	3129230	3129517	-	hg19	tibialis anterior
+RTN3	chr2	68795368	68795482	+	hg19	tibialis anterior
+ATP11B	chr15	57953648	57953731	+	hg19	tibialis anterior
+SORBS1	chr15	72311380	72311436	-	hg19	tibialis anterior
+SPATS2	chr22	24143131	24143157	+	hg19	tibialis anterior
+ADD1	chr8	116635842	116635985	-	hg19	tibialis anterior
+ABCA11P	chr4	77028914	77028946	+	hg19	tibialis anterior
+MASTL	chr3	54850880	54850897	+	hg19	tibialis anterior
+ARHGAP21	chr6	152466622	152466690	-	hg19	tibialis anterior
+SEPN1	chr8	67066282	67066569	+	hg19	tibialis anterior
+PGPEP1L	chr6	56095859	56095932	-	hg19	tibialis anterior
+CCM2	chr21	17222096	17222191	+	hg19	tibialis anterior
+FEZ2	chr14	100841620	100841743	-	hg19	tibialis anterior
+ZNF568	chr12	80199372	80199548	-	hg19	tibialis anterior
+BEST3	chr12	48543870	48543923	-	hg19	tibialis anterior
+WASH3P	chr1	36833453	36833685	-	hg19	tibialis anterior
+RTKN	chr10	24879135	24879408	-	hg19	tibialis anterior
+FAM89B	chr11	11895347	11895406	+	hg19	tibialis anterior
+STAU1	chr1	151045515	151045633	+	hg19	tibialis anterior
+ZC3H14	chr15	52574979	52575089	-	hg19	tibialis anterior
+HERC2P3	chr2	191213614	191213757	+	hg19	tibialis anterior
+KIAA1109	chr3	99770076	99770150	+	hg19	tibialis anterior
+MPRIP	chr12	27829997	27830029	+	hg19	tibialis anterior
+GRIP2	chr2	165693938	165694008	-	hg19	tibialis anterior
+SLC38A6	chr10	75579290	75579403	-	hg19	tibialis anterior
+DMD	chr20	44472166	44472360	-	hg19	tibialis anterior
+SETD5	chr17	57196680	57196856	-	hg19	tibialis anterior
+ATXN3	chr15	72142377	72142508	-	hg19	tibialis anterior
+HERC2P3	chr2	215657021	215657169	-	hg19	tibialis anterior
+PDLIM7	chr1	16930736	16930859	-	hg19	tibialis anterior
+ALS2CR8	chr1	145414693	145414878	+	hg19	tibialis anterior
+ANK3	chr22	29946717	29946832	-	hg19	tibialis anterior
+MTRF1L	chr20	57473996	57474040	+	hg19	tibialis anterior
+STAU2	chr1	26620695	26620822	-	hg19	tibialis anterior
+MYOM1	chr6	17822017	17822136	-	hg19	tibialis anterior
+EPB41L3	chr2	86397872	86397967	-	hg19	tibialis anterior
+APLF	chr13	33111143	33111164	-	hg19	tibialis anterior
+n/a	chr20	62507169	62507228	+	hg19	tibialis anterior
+MYO9A	chr11	47522413	47522484	-	hg19	tibialis anterior
+SMARCB1	chr2	102477287	102477448	+	hg19	tibialis anterior
+TRPS1	chr2	36787928	36788008	-	hg19	tibialis anterior
+ART3	chr1	36838250	36838375	-	hg19	tibialis anterior
+PPP6R3	chr2	204334962	204335036	-	hg19	tibialis anterior
+EEF1D	chr17	17754207	17754266	-	hg19	tibialis anterior
+CACNA2D3	chr21	38639093	38639148	-	hg19	tibialis anterior
+SYNE1	chr5	179706796	179707036	-	hg19	tibialis anterior
+TRIM55	chr11	47194977	47195033	-	hg19	tibialis anterior
+COL21A1	chr19	37467229	37467269	+	hg19	tibialis anterior
+USP25	chr3	57850969	57851019	+	hg19	tibialis anterior
+WARS	chr12	989887	990165	+	hg19	tibialis anterior
+LTBP3	chr14	51197641	51197701	-	hg19	tibialis anterior
+PPP1R12A	chr17	21114249	21114540	-	hg19	tibialis anterior
+ASB8	chr14	26941526	26941597	-	hg19	tibialis anterior
+STK40	chr15	25312559	25312678	+	hg19	tibialis anterior
+SORBS1	chr2	149246955	149247069	+	hg19	tibialis anterior
+SPATS2	chr9	128031215	128031263	+	hg19	tibialis anterior
+ARHGAP21	chr4	2928369	2928402	+	hg19	tibialis anterior
+PDLIM3	chr10	27462050	27462188	+	hg19	tibialis anterior
+PREPL	chr5	88057086	88057145	-	hg19	tibialis anterior
+USP47	chr8	99033433	99033555	+	hg19	tibialis anterior
+GABPB2	chr9	116791013	116791252	+	hg19	tibialis anterior
+MYO5C	chr2	190569749	190569950	+	hg19	tibialis anterior
+INPP1	chr20	47897440	47897501	+	hg19	tibialis anterior
+C3orf26	chr9	32386369	32386436	+	hg19	tibialis anterior
+PKM2	chr11	124972028	124972705	-	hg19	tibialis anterior
+PPFIBP1	chr19	19300068	19300273	-	hg19	tibialis anterior
+COBLL1	chr6	116894021	116894148	+	hg19	tibialis anterior
+CAMK2G	chr21	35199122	35199167	+	hg19	tibialis anterior
+ACOT8	chr2	201724848	201724938	-	hg19	tibialis anterior
+n/a	chr16	68248232	68248335	+	hg19	tibialis anterior
+SKA2	chr6	17790103	17790141	-	hg19	tibialis anterior
+MYO9A	chr9	97844857	97845001	+	hg19	tibialis anterior
+BARD1	chr16	71842408	71842580	-	hg19	tibialis anterior
+NBPF1	chr10	76865419	76865626	-	hg19	tibialis anterior
+HFE2	chrX	71840575	71840751	-	hg19	tibialis anterior
+THOC5	chrX	76949313	76949426	-	hg19	tibialis anterior
+SPEG	chr11	100933178	100933483	-	hg19	tibialis anterior
+GNAS	chr10	97096278	97096562	-	hg19	tibialis anterior
+UBXN11	chr19	39014555	39014569	+	hg19	tibialis anterior
+KIF13A	chr14	59827520	59827580	+	hg19	tibialis anterior
+IMMT	chr1	156450626	156450763	-	hg19	tibialis anterior
+CALU	chr19	44721944	44722005	+	hg19	tibialis anterior
+C1orf167	chr1	145415279	145415315	+	hg19	tibialis anterior
+MYNN	chr2	201303845	201304051	+	hg19	tibialis anterior
+N4BP2L2	chr5	88056805	88056942	-	hg19	tibialis anterior
+TPD52L2	chr8	144674817	144675112	-	hg19	tibialis anterior
+RASAL2	chr4	144355241	144355321	+	hg19	tibialis anterior
+POLR2J4	chr1	167985019	167985189	+	hg19	tibialis anterior
+MOGS	chr16	2316111	2316217	-	hg19	tibialis anterior
+CELF1	chr4	186435857	186436044	-	hg19	tibialis anterior
+MAP4K4	chr2	228193394	228193505	+	hg19	tibialis anterior
+FEZ2	chr3	127641793	127642974	+	hg19	tibialis anterior
+STK40	chr13	111944465	111944641	+	hg19	tibialis anterior
+POLR2J3	chr15	83425482	83425537	+	hg19	tibialis anterior
+RAPH1	chr22	41190518	41190584	-	hg19	tibialis anterior
+TXNRD1	chr15	42698124	42698141	+	hg19	tibialis anterior
+EIF4A2	chr19	13189427	13189549	+	hg19	tibialis anterior
+RPS6KB2	chr6	152690107	152690262	-	hg19	tibialis anterior
+TOM1L2	chr11	66410921	66411611	+	hg19	tibialis anterior
+DSCR3	chr8	144674817	144675112	-	hg19	tibialis anterior
+RTN3	chr13	73649153	73649211	+	hg19	tibialis anterior
+MAPK9	chr8	74891314	74891406	+	hg19	tibialis anterior
+ARFGAP2	chr3	54913377	54913438	+	hg19	tibialis anterior
+CMTM5	chr9	108275880	108275912	+	hg19	tibialis anterior
+CENPV	chrX	47057566	47057754	+	hg19	tibialis anterior
+STYXL1	chr7	130143774	130143837	+	hg19	tibialis anterior
+ZNF568	chr6	32812422	32812647	+	hg19	tibialis anterior
+FBXW11	chr17	46105042	46105155	-	hg19	tibialis anterior
+SLMAP	chr7	150931172	150931360	+	hg19	tibialis anterior
+RAP1GDS1	chr8	74650519	74650584	-	hg19	tibialis anterior
+MICU1	chr6	3264443	3264559	+	hg19	tibialis anterior
+UBE2V1	chr10	76865419	76865626	-	hg19	tibialis anterior
+PPP6R3	chr11	68282496	68282634	+	hg19	tibialis anterior
+WNK1	chr3	12944273	12944322	-	hg19	tibialis anterior
+NIN	chr10	97096278	97097051	-	hg19	tibialis anterior
+TMEM11	chr11	46874403	46874497	+	hg19	tibialis anterior
+NR2C1	chr5	137292166	137292231	-	hg19	tibialis anterior
+NOVA1	chr2	33567905	33568030	+	hg19	tibialis anterior
+IPW	chr17	80203852	80203915	-	hg19	tibialis anterior
+MBD5	chr9	134369792	134369873	+	hg19	tibialis anterior
+GAPVD1	chr4	114199616	114199714	+	hg19	tibialis anterior
+PRRC2B	chr3	130613434	130613619	+	hg19	tibialis anterior
+ADD1	chr12	54676863	54677018	+	hg19	tibialis anterior
+TRPT1	chr14	74764633	74764772	-	hg19	tibialis anterior
+MASTL	chr12	97311399	97311515	+	hg19	tibialis anterior
+RNPS1	chr8	125570954	125571073	-	hg19	tibialis anterior
+PDLIM7	chr7	74133198	74133260	+	hg19	tibialis anterior
+MEF2C	chr7	889157	889240	+	hg19	tibialis anterior
+MATN2	chr16	732958	733087	-	hg19	tibialis anterior
+ZNF618	chr7	74977922	74978010	-	hg19	tibialis anterior
+ANKAR	chr11	63486453	63488504	+	hg19	tibialis anterior
+EEF1D	chr8	120757121	120757276	-	hg19	tibialis anterior
+ZCCHC4	chr4	77066708	77066844	-	hg19	tibialis anterior
+ZNFX1-AS1	chr5	175786814	175786921	-	hg19	tibialis anterior
+ACO1	chr16	2547711	2547728	+	hg19	tibialis anterior
+SEPT10	chr22	46677868	46678048	+	hg19	tibialis anterior
+DDX39B	chr2	160193453	160193588	-	hg19	tibialis anterior
+TMEM218	chr6	152621776	152621916	-	hg19	tibialis anterior
+MEF2BNB	chr16	29466865	29467206	+	hg19	tibialis anterior
+RWDD1	chr7	889560	889670	+	hg19	tibialis anterior
+ITSN1	chr16	8728896	8728936	+	hg19	tibialis anterior
+CLK1	chr7	95864114	95864229	-	hg19	tibialis anterior
+NFATC3	chr1	36833449	36833685	-	hg19	tibialis anterior
+KIF13A	chr2	86397872	86397964	-	hg19	tibialis anterior
+C9orf3	chr15	91459816	91459890	+	hg19	tibialis anterior
+AP1G1	chr8	145721003	145721139	+	hg19	tibialis anterior
+ASAP3	chr17	44067244	44067441	+	hg19	tibialis anterior
+DUSP13	chr15	45895298	45895385	+	hg19	tibialis anterior
+PHKA1	chr8	74439926	74440039	-	hg19	tibialis anterior
+ATRX	chr13	98018713	98018807	+	hg19	tibialis anterior
+PGR	chr16	1888017	1888135	+	hg19	tibialis anterior
+SORBS1	chr2	127808730	127808819	-	hg19	tibialis anterior
+RYR1	chr2	242432708	242432859	+	hg19	tibialis anterior
+MPDU1	chr11	63486174	63488504	+	hg19	tibialis anterior
+STX16	chr22	41188529	41188680	-	hg19	tibialis anterior
+DAAM1	chr20	35127991	35128079	+	hg19	tibialis anterior
+MEF2D	chr20	60835073	60835181	+	hg19	tibialis anterior
+ZNF227	chr10	14867478	14867619	-	hg19	tibialis anterior
+ZBTB7C	chr10	97110966	97111133	-	hg19	tibialis anterior
+HFE2	chr2	74692023	74692114	-	hg19	tibialis anterior
+SPATS2L	chr4	853150	853281	-	hg19	tibialis anterior
+MEF2C	chr3	38560753	38560868	+	hg19	tibialis anterior
+EEF1D	chr10	16509131	16509209	+	hg19	tibialis anterior
+GAB1	chr1	151143909	151144016	-	hg19	tibialis anterior
+DCAF6	chr2	219601035	219601099	+	hg19	tibialis anterior
+RNPS1	chr5	126769055	126769201	+	hg19	tibialis anterior
+KIAA1191	chr13	98018713	98018807	+	hg19	tibialis anterior
+PDLIM3	chr3	98475213	98475384	+	hg19	tibialis anterior
+VEGFA	chr15	23306734	23306791	-	hg19	tibialis anterior
+MFF	chr10	70516030	70516240	+	hg19	tibialis anterior
+KBTBD12	chr22	20043466	20043536	+	hg19	tibialis anterior
+ARHGEF7	chr1	228329334	228329530	+	hg19	tibialis anterior
+n/a	chr1	228296142	228296209	-	hg19	tibialis anterior
+SLC25A17	chr2	102480283	102480513	+	hg19	tibialis anterior
+CAPN3	chr22	18310410	18310547	-	hg19	tibialis anterior
+NFIX	chr3	158311171	158311215	+	hg19	tibialis anterior
+SYNE1	chr10	75587847	75587879	-	hg19	tibialis anterior
+RBM4	chr10	112636428	112636511	+	hg19	tibialis anterior
+EEF1D	chr15	57967166	57967266	+	hg19	tibialis anterior
+SCARB1	chr4	186435424	186435491	-	hg19	tibialis anterior
+KLF5	chr7	152508782	152508818	+	hg19	tibialis anterior
+TMEM70	chr12	129294488	129294656	-	hg19	tibialis anterior
+MBNL2	chr17	49076837	49076848	-	hg19	tibialis anterior
+CACNA2D3	chr19	50305791	50305856	+	hg19	tibialis anterior
+PICALM	chr15	23033894	23034006	-	hg19	tibialis anterior
+FSD1L	chr5	73933319	73933443	-	hg19	tibialis anterior
+UBA1	chr9	123222850	123223025	-	hg19	tibialis anterior
+MEST	chr12	1221381	1221473	+	hg19	tibialis anterior
+LOC100507463	chr11	47528410	47528449	-	hg19	tibialis anterior
+LETMD1	chrX	31144759	31144820	-	hg19	tibialis anterior
+COPZ2	chr2	220308752	220308781	+	hg19	tibialis anterior
+CHPF2	chr1	19476257	19476289	-	hg19	tibialis anterior
+OPA1	chr10	76867750	76868041	-	hg19	tibialis anterior
+STAU2	chr20	43516186	43516383	+	hg19	tibialis anterior
+PSMG4	chr2	70215874	70215970	-	hg19	tibialis anterior
+CLASP1	chr12	49800256	49800348	+	hg19	tibialis anterior
+DUSP13	chr15	42698124	42698141	+	hg19	tibialis anterior
+PPP6R3	chr5	178044345	178044435	-	hg19	tibialis anterior
+ANK3	chr15	72185306	72185518	-	hg19	tibialis anterior
+IQSEC1	chr1	10339155	10339196	+	hg19	tibialis anterior
+ACAD9	chr3	48028873	48028923	-	hg19	tibialis anterior
+SORBS1	chr21	38639093	38639148	-	hg19	tibialis anterior
+LOC100507401	chr15	45895298	45895385	+	hg19	tibialis anterior
+FAM13B	chr16	4730033	4730098	+	hg19	tibialis anterior
+LTBP1	chr7	143020402	143020479	+	hg19	tibialis anterior
+CSNK1D	chr12	49765011	49765073	+	hg19	tibialis anterior
+TPM2	chr10	35477128	35477316	+	hg19	tibialis anterior
+PRRC2B	chr2	167343366	167343478	-	hg19	tibialis anterior
+ANK2	chr2	97914881	97914951	+	hg19	tibialis anterior
+ATP2C1	chr5	37157415	37157564	-	hg19	tibialis anterior
+HNRNPA1	chr12	123960210	123960297	-	hg19	tibialis anterior
+ABCD4	chr3	50137965	50138038	+	hg19	tibialis anterior
+NEDD1	chr1	167992226	167992285	+	hg19	tibialis anterior
+MTSS1	chr14	93727948	93728023	-	hg19	tibialis anterior
+GTF2I	chr4	77067136	77067282	-	hg19	tibialis anterior
+SUN1	chr15	49574184	49574282	+	hg19	tibialis anterior
+JMJD8	chr18	56008910	56009029	+	hg19	tibialis anterior
+PMS2L2	chr13	100515245	100515346	+	hg19	tibialis anterior
+RTN3	chrX	64753490	64753615	-	hg19	tibialis anterior
+TAF2	chr10	105382227	105382310	-	hg19	tibialis anterior
+NUP54	chr8	144674817	144674967	-	hg19	tibialis anterior
+KIAA1191	chr3	33450182	33450289	-	hg19	tibialis anterior
+TBC1D24	chr17	61495668	61495768	+	hg19	tibialis anterior
+TTC38	chr9	96320863	96321000	+	hg19	tibialis anterior
+BAZ2B	chr14	23382933	23383054	-	hg19	tibialis anterior
+SYNE1	chr3	37402734	37402796	+	hg19	tibialis anterior
+CELF1	chr6	43748469	43748522	+	hg19	tibialis anterior
+SEPT2	chr13	102220050	102220196	+	hg19	tibialis anterior
+SLX1B	chr17	73887894	73887959	-	hg19	tibialis anterior
+SUN1	chr14	70522513	70522530	-	hg19	tibialis anterior
+METTL22	chr10	61926349	61926411	-	hg19	tibialis anterior
+SLC25A13	chr20	57430609	57430699	+	hg19	tibialis anterior
+CELF1	chr5	140898511	140898563	-	hg19	tibialis anterior
+EEF1D	chr2	204334962	204335036	-	hg19	tibialis anterior
+STK40	chr1	26620696	26620822	-	hg19	tibialis anterior
+PDLIM3	chr7	128394583	128394776	+	hg19	tibialis anterior
+IMMT	chr11	82705081	82705148	-	hg19	tibialis anterior
+MAN2A2	chr7	18582792	18583297	+	hg19	tibialis anterior
+PPP1R16A	chr17	2246839	2246914	+	hg19	tibialis anterior
+MAPT	chr10	35477128	35477316	+	hg19	tibialis anterior
+SIRT2	chr2	179236853	179236960	+	hg19	tibialis anterior
+PLDN	chr12	42778742	42778798	+	hg19	tibialis anterior
+LIMCH1	chr8	74621267	74621412	-	hg19	tibialis anterior
+STAU2	chr11	27695607	27695889	-	hg19	tibialis anterior
+MBNL2	chr4	7009251	7009352	+	hg19	tibialis anterior
+DCTN5	chr17	44049225	44049311	+	hg19	tibialis anterior
+FAHD1	chr1	12398288	12398362	+	hg19	tibialis anterior
+BIN1	chr15	42484264	42484296	-	hg19	tibialis anterior
+FARP2	chr4	152021637	152021740	+	hg19	tibialis anterior
+RMND5B	chr1	64021029	64021186	+	hg19	tibialis anterior
+RTN3	chr2	44586636	44586889	-	hg19	tibialis anterior
+SLC25A17	chr4	7011604	7011675	+	hg19	tibialis anterior
+DLGAP4	chr15	64221873	64221977	-	hg19	tibialis anterior
+OSBPL2	chr2	220422065	220422340	-	hg19	tibialis anterior
+CDNF	chr15	55666353	55666448	-	hg19	tibialis anterior
+REPS1	chr6	144281606	144281679	-	hg19	tibialis anterior
+SORBS1	chr1	203765421	203765624	+	hg19	tibialis anterior
+MOGS	chr2	110566327	110566472	+	hg19	tibialis anterior
+GAK	chr3	189607129	189607273	+	hg19	tibialis anterior
+EXOG	chr10	116245056	116245139	-	hg19	tibialis anterior
+PTER	chr12	121682376	121682418	-	hg19	tibialis anterior
+TMOD4	chr4	148984299	148984451	+	hg19	tibialis anterior
+TTLL4	chr14	23847558	23847710	+	hg19	tibialis anterior
+MEGF10	chr14	45579097	45579196	+	hg19	tibialis anterior
+NDUFV1	chr2	220308747	220308781	+	hg19	tibialis anterior
+MBNL1	chr1	47051546	47051646	-	hg19	tibialis anterior
+MBNL2	chr20	45891029	45891172	-	hg19	tibialis anterior
+SMPD1	chr3	114429115	114429160	-	hg19	tibialis anterior
+ST3GAL6	chr3	47908736	47908828	-	hg19	tibialis anterior
+HERC2P2	chr14	101297353	101297431	+	hg19	tibialis anterior
+CCAR1	chr7	889560	889670	+	hg19	tibialis anterior
+C22orf25	chr22	25849283	25849401	+	hg19	tibialis anterior
+GUK1	chr5	54786788	54786942	-	hg19	tibialis anterior
+GUK1	chr2	111320189	111320334	-	hg19	tibialis anterior
+CORO6	chr8	144674817	144674967	-	hg19	tibialis anterior
+MRPL55	chr4	152021579	152021740	+	hg19	tibialis anterior
+MAP4K4	chr10	126822081	126822181	-	hg19	tibialis anterior
+PPCS	chr7	8064345	8064444	+	hg19	tibialis anterior
+MICAL3	chr12	102076382	102076440	+	hg19	tibialis anterior
+MLF1	chr13	52758408	52758543	-	hg19	tibialis anterior
+CAMK2G	chr2	127818172	127818216	-	hg19	tibialis anterior
+PDCD4	chr2	88393036	88393074	+	hg19	tibialis anterior
+n/a	chr15	58430646	58430771	-	hg19	tibialis anterior
+PDLIM3	chr22	19964229	19964246	-	hg19	tibialis anterior
+ACTR3B	chr7	81630975	81631031	-	hg19	tibialis anterior
+SLC15A4	chr16	20913808	20914039	+	hg19	tibialis anterior
+SPAG9	chr16	30206207	30206548	+	hg19	tibialis anterior
+SEC16B	chr2	179204399	179204491	+	hg19	tibialis anterior
+AP2A1	chr8	116635828	116635985	-	hg19	tibialis anterior
+NIPA2	chr8	144674817	144674967	-	hg19	tibialis anterior
+TPD52L2	chr2	179622269	179622643	-	hg19	tibialis anterior
+ENC1	chr14	91611565	91611657	+	hg19	tibialis anterior
+CDK5RAP2	chr10	75898564	75898689	-	hg19	tibialis anterior
+ERC1	chr5	175786814	175786921	-	hg19	tibialis anterior
+DOCK9	chr3	9471511	9471735	+	hg19	tibialis anterior
+CELF1	chr15	86205619	86205684	+	hg19	tibialis anterior
+DMD	chr12	49912856	49912965	+	hg19	tibialis anterior
+MLF1	chr1	202923369	202923435	-	hg19	tibialis anterior
+SPEG	chr2	216245534	216245803	-	hg19	tibialis anterior
+ZDHHC16	chr16	2258211	2258335	+	hg19	tibialis anterior
+NIT2	chr12	56552686	56552704	+	hg19	tibialis anterior
+UBR4	chr12	102078160	102078202	+	hg19	tibialis anterior
+DUSP13	chr11	47310519	47310578	+	hg19	tibialis anterior
+ACADVL	chr2	152355812	152355904	-	hg19	tibialis anterior
+YWHAB	chr11	70196029	70196145	+	hg19	tibialis anterior
+PCBP1-AS1	chr12	49835513	49835599	+	hg19	tibialis anterior
+SPATS2	chr1	62619030	62619153	+	hg19	tibialis anterior
+RTN3	chr14	68112360	68112519	+	hg19	tibialis anterior
+CAPN3	chr17	36521191	36521292	+	hg19	tibialis anterior
+CLK4	chr5	36208727	36208792	-	hg19	tibialis anterior
+CDK13	chr3	37845314	37845433	+	hg19	tibialis anterior
+CPEB3	chr5	54786788	54786942	-	hg19	tibialis anterior
+MIB2	chr2	209138742	209138777	+	hg19	tibialis anterior
+MYO9A	chr2	69581391	69581444	-	hg19	tibialis anterior
+SLC25A17	chr18	77736718	77736787	-	hg19	tibialis anterior
+LCLAT1	chr10	4879651	4879773	+	hg19	tibialis anterior
+RSRC2	chr10	116222804	116222923	-	hg19	tibialis anterior
+KIF1B	chr5	96062498	96062563	+	hg19	tibialis anterior
+MAP4	chr17	74086410	74086478	-	hg19	tibialis anterior
+FAM45A	chr3	27472789	27473160	-	hg19	tibialis anterior
+DSCR3	chr16	2317176	2317219	-	hg19	tibialis anterior
+PDCD4	chr5	148622054	148622101	+	hg19	tibialis anterior
+PLDN	chr4	114293689	114293781	+	hg19	tibialis anterior
+MGRN1	chr14	100841620	100841883	-	hg19	tibialis anterior
+CLCN1	chr1	156924684	156924713	-	hg19	tibialis anterior
+SPATS2	chr12	124811955	124812179	-	hg19	tibialis anterior
+CREM	chr16	20913808	20914039	+	hg19	tibialis anterior
+SCN7A	chr16	28915021	28915062	+	hg19	tibialis anterior
+ANKRD36	chr15	58350210	58350306	-	hg19	tibialis anterior
+C5orf42	chr17	8479961	8479987	-	hg19	tibialis anterior
+RILPL1	chr1	174927028	174927310	+	hg19	tibialis anterior
+RBM5	chr10	35477128	35477316	+	hg19	tibialis anterior
+DCAF6	chr13	52763774	52764049	-	hg19	tibialis anterior
+BTBD7	chr2	228194322	228194499	+	hg19	tibialis anterior
+ANK3	chr10	14878250	14878293	-	hg19	tibialis anterior
+TXNRD1	chr11	6340887	6340982	-	hg19	tibialis anterior
+NUP54	chr8	146221893	146221993	-	hg19	tibialis anterior
+GALK2	chr1	93128977	93129009	-	hg19	tibialis anterior
+NEDD4L	chr6	119177534	119177708	-	hg19	tibialis anterior
+CLYBL	chr1	21106848	21107033	-	hg19	tibialis anterior
+LAS1L	chr16	2317176	2317238	-	hg19	tibialis anterior
+NPRL3	chr3	46304884	46305946	+	hg19	tibialis anterior
+SH3PXD2A	chr22	18232871	18232940	-	hg19	tibialis anterior
+EEF1D	chr5	171423894	171424055	-	hg19	tibialis anterior
+UBP1	chr12	32890799	32890876	+	hg19	tibialis anterior
+TANC2	chr6	71136273	71136467	+	hg19	tibialis anterior
+FAM120A	chr7	94916422	94916445	+	hg19	tibialis anterior
+C21orf7	chr5	135483521	135483595	+	hg19	tibialis anterior
+RBM23	chr2	120529053	120529196	+	hg19	tibialis anterior
+LAMP2	chr15	52574979	52575081	-	hg19	tibialis anterior
+IDI1	chr9	130164836	130165032	+	hg19	tibialis anterior
+HDDC3	chr17	29694243	29694296	+	hg19	tibialis anterior
+RALGAPB	chrY	272990	273067	-	hg19	tibialis anterior
+GOLGA4	chr22	41195027	41195087	-	hg19	tibialis anterior
+PTPRM	chrX	153637754	153638011	-	hg19	tibialis anterior
+VEGFA	chr18	47801740	47801814	-	hg19	tibialis anterior
+ITGBL1	chr2	86078387	86078826	-	hg19	tibialis anterior
+TRIM65	chr10	29797271	29797318	-	hg19	tibialis anterior
+ZNF568	chr16	58658557	58658698	-	hg19	tibialis anterior
+TUSC3	chr6	129763367	129763372	+	hg19	tibialis anterior
+SLC8A3	chr1	145414675	145414878	+	hg19	tibialis anterior
+ANK3	chr4	25395427	25395513	+	hg19	tibialis anterior
+NPEPL1	chr12	57666236	57666337	-	hg19	tibialis anterior
+GNAS	chr1	25570945	25570989	-	hg19	tibialis anterior
+DIAPH1	chr12	9845424	9845527	+	hg19	tibialis anterior
+RAPH1	chr2	228194322	228194375	+	hg19	tibialis anterior
+UBXN11	chr12	57486231	57486364	+	hg19	tibialis anterior
+CALU	chr7	75630208	75630272	-	hg19	tibialis anterior
+RAB30	chr1	227406964	227407121	-	hg19	tibialis anterior
+HDAC9	chr2	73462678	73462773	+	hg19	tibialis anterior
+SGSM2	chr12	988739	989197	+	hg19	tibialis anterior
+FAM160A1	chr10	12199907	12200104	+	hg19	tibialis anterior
+CREM	chr7	75651169	75651310	-	hg19	tibialis anterior
+OSBPL6	chr2	58381889	58381937	+	hg19	tibialis anterior
+PPHLN1	chr19	52510546	52510583	-	hg19	tibialis anterior
+UBE2V1	chr5	135483521	135483595	+	hg19	tibialis anterior
+STAU2	chr3	72893510	72893574	-	hg19	tibialis anterior
+EEF1D	chr17	25928386	25928427	+	hg19	tibialis anterior
+LDB3	chr20	20579323	20579463	-	hg19	tibialis anterior
+BDNF	chr4	120156445	120156566	+	hg19	tibialis anterior
+TBC1D14	chr4	170476871	170477002	-	hg19	tibialis anterior
+MAPT	chr15	85223163	85223200	-	hg19	tibialis anterior
+VPS13D	chr4	48396593	48396670	+	hg19	tibialis anterior
+CREM	chr5	148620239	148620337	+	hg19	tibialis anterior
+VPS39	chr19	45917221	45917292	-	hg19	tibialis anterior
+RPS3A	chr15	57953648	57953731	+	hg19	tibialis anterior
+ACACB	chr10	114920378	114920450	+	hg19	tibialis anterior
+MLF1	chr15	45895302	45895385	+	hg19	tibialis anterior
+EFCAB7	chr12	49906645	49906688	+	hg19	tibialis anterior
+PREPL	chr15	86205619	86205684	+	hg19	tibialis anterior
+TBC1D14	chr10	116213138	116213242	-	hg19	tibialis anterior
+UROD	chr3	72893510	72893604	-	hg19	tibialis anterior
+DAPK2	chr18	32418709	32418801	+	hg19	tibialis anterior
+PTER	chr7	152480272	152480327	+	hg19	tibialis anterior
+PKNOX2	chr1	225704898	225705692	-	hg19	tibialis anterior
+OBSL1	chr3	170824972	170824995	-	hg19	tibialis anterior
+CCPG1	chr9	134479348	134479440	-	hg19	tibialis anterior
+MLLT10	chr15	78449250	78449504	+	hg19	tibialis anterior
+PLAGL1	chr8	28749277	28749307	+	hg19	tibialis anterior
+ZC3H11A	chr20	45027336	45027410	-	hg19	tibialis anterior
+RGPD5	chr4	187511659	187511849	-	hg19	tibialis anterior
+TP63	chr13	75894150	75894173	-	hg19	tibialis anterior
+ABLIM1	chr3	107378415	107378617	+	hg19	tibialis anterior
+CAMKK2	chr4	79854230	79854385	-	hg19	tibialis anterior
+ARHGAP10	chr4	183267804	183268082	+	hg19	tibialis anterior
+DNM1L	chr10	88466288	88466476	+	hg19	tibialis anterior
+CMTM5	chr9	131871458	131871556	-	hg19	tibialis anterior
+PRPF39	chr1	40029508	40029594	-	hg19	tibialis anterior
+SPEG	chr2	190650072	190650197	+	hg19	tibialis anterior
+MBNL1	chr10	97175226	97175942	-	hg19	tibialis anterior
+ISCU	chr13	99498178	99498245	-	hg19	tibialis anterior
+LAS1L	chr13	99478126	99478194	-	hg19	tibialis anterior
+ARPC4	chr17	8479943	8479990	-	hg19	tibialis anterior
+MKNK1	chr14	104196130	104196183	+	hg19	tibialis anterior
+FBXW11	chr1	202544130	202544314	+	hg19	tibialis anterior
+ZMYND8	chr3	49063428	49063499	-	hg19	tibialis anterior
+n/a	chr4	103720085	103720134	-	hg19	tibialis anterior
+FNBP1	chr17	74679929	74680009	-	hg19	tibialis anterior
+ZBTB20	chr16	15802659	15802698	-	hg19	tibialis anterior
+MAP4	chr14	100841620	100841740	-	hg19	tibialis anterior
+MEG3	chr2	58381894	58381937	+	hg19	tibialis anterior
+ATP2A1	chr14	23559191	23559310	-	hg19	tibialis anterior
+SUN1	chr10	75280666	75280785	-	hg19	tibialis anterior
+CRYBB2P1	chr11	47522413	47522484	-	hg19	tibialis anterior
+PPAP2A	chr6	129796535	129796546	+	hg19	tibialis anterior
+RGPD6	chr4	38053520	38053681	+	hg19	tibialis anterior
+FAM54B	chr1	21106843	21107033	-	hg19	tibialis anterior
+EEF1D	chr16	15802660	15802698	-	hg19	tibialis anterior
+RPS3A	chr13	111552877	111553041	-	hg19	tibialis anterior
+MLST8	chr9	152034	152078	-	hg19	tibialis anterior
+CTBP2	chr17	33269815	33269925	-	hg19	tibialis anterior
+GLCCI1	chr8	145689843	145689995	-	hg19	tibialis anterior
+LYRM1	chr2	132256440	132256526	+	hg19	tibialis anterior
+C14orf118	chr1	235652473	235652573	-	hg19	tibialis anterior
+CCR3	chrX	102939609	102939657	-	hg19	tibialis anterior
+PHIP	chr9	126554866	126554909	-	hg19	tibialis anterior
+MYBPC1	chr14	20849712	20849845	-	hg19	tibialis anterior
+MKL2	chr2	160284452	160284553	-	hg19	tibialis anterior
+n/a	chr19	58643609	58644043	-	hg19	tibialis anterior
+CD276	chr16	67265091	67265252	-	hg19	tibialis anterior
+EEF1D	chr3	124453940	124454093	+	hg19	tibialis anterior
+BIN1	chr1	39946592	39946702	+	hg19	tibialis anterior
+SMYD1	chr17	35939228	35939530	-	hg19	tibialis anterior
+ALDH1A2	chr19	10753573	10753697	+	hg19	tibialis anterior
+RNF146	chr8	125592792	125592803	-	hg19	tibialis anterior
+ARVCF	chr2	204341799	204341879	-	hg19	tibialis anterior
+PLDN	chr6	139247538	139247618	-	hg19	tibialis anterior
+CACNA2D1	chr7	90041321	90041363	+	hg19	tibialis anterior
+CEP95	chr12	2905431	2905534	+	hg19	tibialis anterior
+LYRM1	chrX	133906173	133906313	-	hg19	tibialis anterior
+SLC25A17	chrX	67283696	67284019	-	hg19	tibialis anterior
+SULT1A3	chr15	78449250	78449504	+	hg19	tibialis anterior
+OSBPL6	chr11	9801923	9802122	+	hg19	tibialis anterior
+TRPS1	chr13	98009050	98009103	+	hg19	tibialis anterior
+EEF1D	chr8	125570954	125571073	-	hg19	tibialis anterior
+XPO7	chr11	125451107	125451218	+	hg19	tibialis anterior
+TTN	chr7	44279188	44279262	-	hg19	tibialis anterior
+C14orf159	chr7	45109425	45109560	+	hg19	tibialis anterior
+AP3M1	chr6	125330320	125330428	+	hg19	tibialis anterior
+KIAA1191	chr17	44116393	44116581	-	hg19	tibialis anterior
+SETD5	chr10	97174251	97174619	-	hg19	tibialis anterior
+AKAP13	chr20	43516289	43516383	+	hg19	tibialis anterior
+GMEB1	chr3	152174056	152174150	+	hg19	tibialis anterior
+SPATS2	chr10	123792609	123792668	+	hg19	tibialis anterior
+ADIPOR1	chr18	13730626	13730754	+	hg19	tibialis anterior
+FN1	chr16	30077197	30077248	+	hg19	tibialis anterior
+MLST8	chr1	202544130	202544310	+	hg19	tibialis anterior
+EEF1D	chrX	119504570	119504698	+	hg19	tibialis anterior
+MYL6	chr12	133430017	133430159	-	hg19	tibialis anterior
+MYBPC1	chr12	42726462	42726504	+	hg19	tibialis anterior
+MADD	chr4	106888345	106888601	+	hg19	tibialis anterior
+NEB	chr12	108961434	108961533	+	hg19	tibialis anterior
+PPFIA1	chr10	115402693	115402797	-	hg19	tibialis anterior
+TMEM159	chr3	152052900	152053019	+	hg19	tibialis anterior
+PDCD6IP	chr4	99308587	99308654	+	hg19	tibialis anterior
+SORBS1	chr2	122203025	122203072	-	hg19	tibialis anterior
+SPATS2	chr5	60199475	60199543	-	hg19	tibialis anterior
+HDLBP	chr5	171384601	171384702	-	hg19	tibialis anterior
+INADL	chr8	25303645	25303766	-	hg19	tibialis anterior
+ARG2	chr1	151297221	151297393	-	hg19	tibialis anterior
+SOCS7	chr18	74700256	74700483	-	hg19	tibialis anterior
+MYH11	chr10	14867493	14867619	-	hg19	tibialis anterior
+NADKD1	chr2	39216411	39216455	-	hg19	tibialis anterior
+ITGA9	chr16	16429718	16429994	+	hg19	tibialis anterior
+PPAP2A	chr2	73961655	73961715	-	hg19	tibialis anterior
+DPH5	chr3	50036873	50036946	+	hg19	tibialis anterior
+MICAL3	chr10	97131083	97131184	-	hg19	tibialis anterior
+PIKFYVE	chr1	6294465	6294571	-	hg19	tibialis anterior
+CAPN3	chr3	38555241	38555359	+	hg19	tibialis anterior
+GFPT1	chr8	22388815	22388841	+	hg19	tibialis anterior
+TXNL4A	chr1	169351300	169351519	+	hg19	tibialis anterior
+AKR1E2	chr20	57464581	57464604	+	hg19	tibialis anterior
+ABLIM1	chr12	102060522	102060575	+	hg19	tibialis anterior
+CAST	chr11	125237742	125237881	+	hg19	tibialis anterior
+MEF2C	chr9	124043748	124043840	+	hg19	tibialis anterior
+EXOC7	chr16	30012533	30012851	+	hg19	tibialis anterior
+SLC4A7	chr9	2170419	2170472	+	hg19	tibialis anterior
+SUN1	chr4	169846384	169846429	+	hg19	tibialis anterior
+RNPS1	chr5	171384601	171384702	-	hg19	tibialis anterior
+MORF4L2	chr10	88446826	88447029	+	hg19	tibialis anterior
+ABLIM3	chr10	123989866	123989955	+	hg19	tibialis anterior
+ANK2	chr16	2660463	2661053	+	hg19	tibialis anterior
+WARS	chr16	15878555	15878575	-	hg19	tibialis anterior
+ARHGEF11	chr8	144674817	144675063	-	hg19	tibialis anterior
+NCOR2	chr1	151106436	151106531	-	hg19	tibialis anterior
+LYRM1	chr12	32890799	32890876	+	hg19	tibialis anterior
+ATP2A1	chr13	77692475	77692654	-	hg19	tibialis anterior
+ALDH1A2	chr8	144674817	144675063	-	hg19	tibialis anterior
+MYH10	chr4	48541988	48542085	-	hg19	tibialis anterior
+CHTOP	chr1	99128253	99128372	+	hg19	tibialis anterior
+RABGAP1L	chr8	29107502	29107601	-	hg19	tibialis anterior
+CREM	chr12	49399526	49399664	-	hg19	tibialis anterior
+n/a	chr13	31717929	31718060	-	hg19	tibialis anterior
+MFF	chr3	25611249	25611409	+	hg19	tibialis anterior
+FBXW11	chr7	128394316	128394509	+	hg19	tibialis anterior
+CDNF	chr11	63486453	63488504	+	hg19	tibialis anterior
+PRKCDBP	chr2	9616116	9616168	+	hg19	tibialis anterior
+ZNF252	chr16	68325112	68325235	+	hg19	tibialis anterior
+EVI5	chr6	116895221	116895334	+	hg19	tibialis anterior
+MCM9	chr15	49311615	49311749	-	hg19	tibialis anterior
+HP1BP3	chr6	43748469	43748540	+	hg19	tibialis anterior
+RNPS1	chr7	50772837	50773020	-	hg19	tibialis anterior
+CCR3	chr1	228329327	228329530	+	hg19	tibialis anterior
+BID	chr19	6746040	6746207	+	hg19	tibialis anterior
+FBXW11	chr10	102822299	102822860	+	hg19	tibialis anterior
+DNM1L	chr12	70088150	70088244	-	hg19	tibialis anterior
+FAM135A	chr7	128394583	128394776	+	hg19	tibialis anterior
+PPP1R9A	chr14	53327732	53327752	-	hg19	tibialis anterior
+SMAD5	chr5	149762625	149762735	+	hg19	tibialis anterior
+CAMK2G	chr3	99860374	99860489	+	hg19	tibialis anterior
+EEF1D	chr10	73979812	73980137	+	hg19	tibialis anterior
+PTPN4	chr16	16192730	16192759	+	hg19	tibialis anterior
+MYO5C	chr5	43307868	43307926	-	hg19	tibialis anterior
+SLC2A8	chr6	125574863	125574901	+	hg19	tibialis anterior
+DOCK9	chr22	43272894	43273016	-	hg19	tibialis anterior
+NF1	chr18	32409364	32409453	+	hg19	tibialis anterior
+n/a	chr2	102480283	102480513	+	hg19	tibialis anterior
+PACRGL	chr8	135622713	135622898	-	hg19	tibialis anterior
+SLC25A17	chr10	76867750	76868041	-	hg19	tibialis anterior
+DNASE1L1	chrX	31144759	31144790	-	hg19	tibialis anterior
+MBD1	chr2	232658973	232659061	+	hg19	tibialis anterior
+ST3GAL5	chr3	167758574	167758657	-	hg19	tibialis anterior
+SVIL	chr3	57850534	57850584	+	hg19	tibialis anterior
+CNOT1	chr8	144889722	144889784	-	hg19	tibialis anterior
+LAMA2	chr7	90041321	90041375	+	hg19	tibialis anterior
+HFE2	chr2	175622294	175622403	-	hg19	tibialis anterior
+HMGN1	chr19	39389019	39389065	-	hg19	tibialis anterior
+ANAPC4	chr22	18178907	18178976	+	hg19	tibialis anterior
+R3HDM2	chr22	41195565	41195675	-	hg19	tibialis anterior
+BBX	chr7	72277659	72277949	-	hg19	tibialis anterior
+C1orf63	chr2	215657021	215657169	-	hg19	tibialis anterior
+SUN1	chr16	20913808	20914039	+	hg19	tibialis anterior
+TMEM159	chr2	127809831	127809938	-	hg19	tibialis anterior
+GDAP1	chr10	97154368	97154430	-	hg19	tibialis anterior
+NPHP1	chr2	86397872	86397964	-	hg19	tibialis anterior
+CLEC2D	chr1	183516238	183516387	+	hg19	tibialis anterior
+MFF	chr8	144674817	144675063	-	hg19	tibialis anterior
+NAB2	chr1	151297221	151297393	-	hg19	tibialis anterior
+STYXL1	chr12	72288105	72288155	+	hg19	tibialis anterior
+SLC8A3	chr19	19102149	19102362	-	hg19	tibialis anterior
+CDC42BPA	chr10	88441193	88441560	+	hg19	tibialis anterior
+EEF1D	chr10	1081754	1081916	+	hg19	tibialis anterior
+CCT7	chr5	138216370	138216422	+	hg19	tibialis anterior
+WNK1	chr20	2928628	2928670	+	hg19	tibialis anterior
+SEC61A2	chr2	219523424	219523524	-	hg19	tibialis anterior
+STYXL1	chr9	96320863	96320997	+	hg19	tibialis anterior
+VRK2	chr10	103553670	103553755	-	hg19	tibialis anterior
+ZNF615	chr19	58515751	58516068	+	hg19	tibialis anterior
+KIAA0100	chr6	125578244	125578304	+	hg19	tibialis anterior
+SMAD5	chr12	10862507	10862713	-	hg19	tibialis anterior
+SHQ1	chr5	86690222	86690301	-	hg19	tibialis anterior
+KSR1	chr2	228194322	228194413	+	hg19	tibialis anterior
+RALGAPA2	chr12	1221381	1221464	+	hg19	tibialis anterior
+USP53	chr18	5394676	5394792	-	hg19	tibialis anterior
+NEK1	chr13	111552877	111553008	-	hg19	tibialis anterior
+TXNRD1	chr8	144674817	144675112	-	hg19	tibialis anterior
+SEC11A	chr10	530721	530888	-	hg19	tibialis anterior
+SLAIN2	chr11	63486174	63488504	+	hg19	tibialis anterior
+MAPK8IP3	chr15	57967166	57967266	+	hg19	tibialis anterior
+ABLIM3	chr7	64274437	64274525	+	hg19	tibialis anterior
+ERCC1	chr12	32891198	32891230	+	hg19	tibialis anterior
+n/a	chr2	44586636	44587177	-	hg19	tibialis anterior
+TCF7L2	chr6	56482784	56485513	-	hg19	tibialis anterior
+PLDN	chr5	176916772	176917032	-	hg19	tibialis anterior
+SPATS2	chr3	152164493	152164546	+	hg19	tibialis anterior
+AKAP13	chr5	138215879	138215977	+	hg19	tibialis anterior
+AAGAB	chr2	130931087	130931177	-	hg19	tibialis anterior
+ABLIM1	chr5	54771127	54771278	-	hg19	tibialis anterior
+SHQ1	chr12	69651815	69651925	+	hg19	tibialis anterior
+DTNA	chr13	28006868	28006941	+	hg19	tibialis anterior
+ACTR3B	chr5	176918405	176918421	-	hg19	tibialis anterior
+PTPRE	chr5	123982372	123984826	-	hg19	tibialis anterior
+ENAH	chr3	107508634	107508723	+	hg19	tibialis anterior
+TNIK	chr11	47194261	47194302	-	hg19	tibialis anterior
+RAPGEF1	chr6	157471861	157471987	+	hg19	tibialis anterior
+IDH3A	chr21	44323292	44324386	+	hg19	tibialis anterior
+DNM2	chr3	33612182	33612184	-	hg19	tibialis anterior
+HMBOX1	chr3	33605456	33605458	-	hg19	tibialis anterior
+ELMO2	chrX	133087077	133087238	-	hg19	tibialis anterior
+KIAA1191	chr4	186435424	186435491	-	hg19	tibialis anterior
+FAT1	chr10	102822743	102822860	+	hg19	tibialis anterior
+TBC1D4	chr2	136374238	136374327	+	hg19	tibialis anterior
+BBX	chr1	228329334	228329530	+	hg19	tibialis anterior
+PAQR3	chr7	77523299	77523310	+	hg19	tibialis anterior
+ODZ3	chr11	12020243	12020326	-	hg19	tibialis anterior
+LDB3	chr4	110402833	110402937	+	hg19	tibialis anterior
+BBX	chr6	76350403	76350420	+	hg19	tibialis anterior
+CRAT	chr21	40719173	40719218	-	hg19	tibialis anterior
+PABPC4	chr4	166184349	166184511	+	hg19	tibialis anterior
+PMS1	chr1	21106838	21107033	-	hg19	tibialis anterior
+SORBS1	chr5	123979937	123980354	-	hg19	tibialis anterior
+ACOT8	chr16	2132437	2132505	+	hg19	tibialis anterior
+DOCK9	chr2	209138742	209138777	+	hg19	tibialis anterior
+DOCK9	chr14	96846025	96846092	+	hg19	tibialis anterior
+DDX39B	chr9	46698075	46698184	+	hg19	tibialis anterior
+BIN1	chr2	209138745	209138777	+	hg19	tibialis anterior
+RWDD1	chr22	41213207	41213381	-	hg19	tibialis anterior
+MYH10	chr2	127809831	127809938	-	hg19	tibialis anterior
+ZFYVE21	chr10	75579290	75579375	-	hg19	tibialis anterior
+PPP1R12B	chr15	56960195	56960439	-	hg19	tibialis anterior
+IMPDH2	chr10	74879209	74879280	+	hg19	tibialis anterior
+UBE2D3	chr16	3583099	3583155	+	hg19	tibialis anterior
+MXRA7	chr3	152173331	152173366	+	hg19	tibialis anterior
+MYH11	chr12	102060522	102060575	+	hg19	tibialis anterior
+WARS	chr19	12345528	12345639	+	hg19	tibialis anterior
+VRK2	chr1	17961043	17961057	+	hg19	tibialis anterior
+ACIN1	chr3	152173331	152173366	+	hg19	tibialis anterior
+USP54	chr1	119689576	119689692	+	hg19	tibialis anterior
+STIM1	chr6	54025538	54025597	+	hg19	tibialis anterior
+MFF	chr21	30481361	30481504	+	hg19	tibialis anterior
+CELF1	chr15	58430646	58430771	-	hg19	tibialis anterior
+MLF1	chr4	170429920	170430003	-	hg19	tibialis anterior
+LAMA2	chr2	215661785	215661841	-	hg19	tibialis anterior
+CD59	chr8	74621267	74621412	-	hg19	tibialis anterior
+TBC1D1	chr9	131586026	131586173	-	hg19	tibialis anterior
+LSP1	chr4	186435857	186436044	-	hg19	tibialis anterior
+HP1BP3	chr4	76440643	76440742	+	hg19	tibialis anterior
+MYH11	chr22	29927067	29927099	-	hg19	tibialis anterior
+MTSS1	chr9	134479348	134479440	-	hg19	tibialis anterior
+ANKRD10	chr17	57643988	57644070	+	hg19	tibialis anterior
+CBWD1	chr2	113174770	113174915	-	hg19	tibialis anterior
+CCT6B	chr15	72185306	72185521	-	hg19	tibialis anterior
+CYHR1	chr1	85724618	85724744	-	hg19	tibialis anterior
+LOC150776	chr4	8034375	8034407	-	hg19	tibialis anterior
+B3GALNT2	chr8	94930139	94930173	+	hg19	tibialis anterior
+MORF4L2	chr12	102811733	102811781	-	hg19	tibialis anterior
+DENND1A	chr5	133644265	133644418	-	hg19	tibialis anterior
+MEF2D	chr14	75517555	75517726	-	hg19	tibialis anterior
+LOC440354	chr7	75643060	75643205	-	hg19	tibialis anterior
