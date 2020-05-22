@@ -1,23 +1,27 @@
-# TODO:
-# - create proper R package
-# - look into "GeneStructureTools"
-# - visualize overlaps (venn diagram)
-# - add gene ontology analysis
+######################
+### SpliceSelector ###
+######################
 
-library(DEXSeq)
+suppressPackageStartupMessages( library(stringr) )
+suppressPackageStartupMessages( library(data.table) )
 
-setwd("/home/maxd/mnt/xomics/SpliceSelector")
+setwd("/home/maxd/SpliceSelector")
 
 source("bin/helperFunctions.R")
 
-species <- "hsapiens"
+print(str_extract(list.files("test/spliceEvents/"), "(.*)(?=_spliceEvents)"))
+study <- "Nakamori2013"
 
-if (species == "hsapiens"){
-  spliceEvents <- read.csv("test/hs_spliceEvents.csv", sep = "\t", stringsAsFactors = FALSE)
+spliceEvents <- read.csv(paste0("test/spliceEvents/",study,"_spliceEvents.csv"),
+                         sep = "\t", stringsAsFactors = FALSE)
+
+### lift over coordinates to most recent genome build ##############
+
+if( substring(spliceEvents$Assembly[1],1,2) == "hg"){
+  species <- "hsapiens"
   targetAssembly <- "hg38"
-
-} else if (species == "mmusculus"){
-  spliceEvents <- read.csv("test/mm_spliceEvents.csv", sep = "\t", stringsAsFactors = FALSE)
+} else if ( substring(spliceEvents$Assembly[1],1,2) == "mm" ){
+  species <- "mmusculus"
   targetAssembly <- "mm10"
 }
 
@@ -49,22 +53,37 @@ for (givenAssembly in unique(spliceEvents$Assembly)){
   }
 }
 
-### create custom UCSC track
-# createUCSCtrack(grEvents,
-#                 outFile = paste0("test/", targetAssembly,"_UCSC_customTrack.bed"),
-#                 trackName = "DM1 Mis-Splicing",
-#                 trackDescription = "Putative DM1-related splice events")
+### create custom UCSC track ############
 
-### validate exon coordinates
-# source("bin/getOverlap.R")
-# 
-# gc32_gtf <- import("lib/gencode.v32.annotation.gtf")
-# gc32_exons <- subset(gc32_gtf[ which(gc32_gtf$type == "exon") ],
-#                      select = c("gene_id", "transcript_id", "exon_id", "exon_number", "level"))
-# 
-# overlap <- getOverlap(grEvents, gc32_exons)
+createUCSCtrack(grEvents,
+                outFile = paste0("test/UCSC_customTracks/", study,"_UCSC_customTrack.bed"),
+                trackName = paste0("DM1 Mis-Splicing (", study, ")"),
+                trackDescription = paste0("Putative DM1-related splice events as reported by ", study))
+
+### validate exon coordinates ###########
+
+source("bin/getOverlap.R")
+source("bin/plotOverlapOverview.R")
+
+if (species == "hsapiens"){
+  gtf <- import("lib/gencode.v32.annotation.gtf")
+
+} else if (species == "mmusculus"){
+  gtf <- import("lib/gencode.vM24.annotation.gtf")
+}
+ 
+exons <- subset(gtf[ which(gtf$type == "exon") ],
+                select = c("gene_id", "transcript_id", "exon_id", "exon_number", "level"))
+
+overlap <- getOverlap(grEvents, exons)
+
+fwrite(overlap, paste0("test/tables/", study, "_overlap.csv"))
+
+plotOverlapOverview(overlap, study, paste0(getwd(),"/test/plots"))
 
 ######## DEXSEQ ##########
+# suppressPackageStartupMessages( library(DEXSeq) )
+#
 # # load dexseq results
 # load(paste0("test/dexseq_", species, ".RData"))
 # 

@@ -1,14 +1,14 @@
-# ADD DESCRIPTION
+# plots results of getOverlap.R script in two barplots
+# overview of how supplied coordinates match to the exon annotation file
 
 plotOverlapOverview <- function(overlap, plotPrefix, outDir){
   
-  library(dplyr)
+  require(dplyr)
   
   # get number of exon matches per input coordinates
-  overlap %>%
-    group_by(query.index) %>%
-    summarise(n_distinct(annotation.exon_id)) -> exonMatches
-  
+  exonMatches <- overlap %>% filter(overlap != "none") %>%
+    group_by(query.index) %>% count(annotation.exon_id) %>% summarise(sum(n))
+
   # get unique matches of input coordinates to an exon
   uniqueMatches <- sum( exonMatches[, 2] == 1)
   
@@ -39,7 +39,7 @@ plotOverlapOverview <- function(overlap, plotPrefix, outDir){
   
   # plot counts for every type of overlap
   jpeg(paste0(outDir,"/", plotPrefix, "_overlapCounts.jpeg"),
-       width = 1000, height = 1000, pointsize = 24)
+       width = 1200, height = 1000, pointsize = 24)
   
   plot <- barplot(height = overlapCounts,
                   names = c("Equal", "Within", "Spans One", "Spans Multiple", "Other"),

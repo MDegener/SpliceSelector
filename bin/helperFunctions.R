@@ -1,6 +1,6 @@
 # Get gene annotation based on identifier (e.g. Ensembl gene id) using BioMart Ensembl database
 getBiomaRtAnnotation <- function(identifierList, identifierType, species){
-  library(biomaRt)
+  require(biomaRt)
   
   ensembl <- useMart(biomart="ensembl",dataset=paste0(species,"_gene_ensembl"))
   
@@ -15,7 +15,7 @@ getBiomaRtAnnotation <- function(identifierList, identifierType, species){
 }
 
 readLeafcutterResults <- function(effect_sizes, cluster_significance){
-  library(tidyr)
+  require(tidyr)
   
   lc_eff <- read.csv(effect_sizes, sep = "\t")
   lc_eff <- separate(lc_eff, "intron", into = c("chr", "start", "end", "cluster_id"), sep = ":")
