@@ -1,0 +1,27 @@
+Package: SpliceSelector
+Title: Filtering of Results from common Alternative Splicing Software
+Version: 0.1
+Authors@R: 
+    person(given = "Max",
+           family = "Degener",
+           role = c("aut", "cre"),
+           email = "mjf.degener@gmail.com")
+Maintainer: Max Degener <mjf.degener@gmail.com>
+Description: The SpliceSelector package faclitates a targeted analysis of 
+  alternatively spliced candidate exons in any RNAseq dataset. 
+  The required input is a list of genomic coordinates (chr:start-end), 
+  an exon annotation file (e.g. GENCODE) and the results from common splicing 
+  analysis tools. Results from MISO, DEXSeq, leafcutter and MAJIQ will be supported.
+License: MIT + file LICENSE
+Imports:
+  GenomicRanges (>= 1.40.0),
+  rtracklayer (>= 1.48.0),
+  biomaRt (>= 2.44.4),
+  data.table,
+  R.utils,
+  dplyr,
+  tidyr,
+  stringr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

@@ -1,8 +1,8 @@
 # SpliceSelector Tool
 
-The SpliceSelector tool faclitates a targeted analysis of alternatively spliced candidate exons in any RNAseq dataset. The required input is a list of genomic coordinates (chr:start-end), an exon annotation file (e.g. [GENCODE](https://www.gencodegenes.org/human/release_32.html)) and the results from common splicing analysis tools. Results from [DEXSeq](http://bioconductor.org/packages/release/bioc/html/DEXSeq.html), [leafcutter](https://github.com/davidaknowles/leafcutter) and [MAJIQ](https://majiq.biociphers.org/) will be supported.
+The SpliceSelector package faclitates a targeted analysis of alternatively spliced candidate exons in any RNAseq dataset. The required input will be a list of genomic coordinates (chr:start-end), an exon annotation file (e.g. [GENCODE](https://www.gencodegenes.org/human/release_32.html)) and the results from common splicing analysis tools. Results from [MISO](https://miso.readthedocs.io/en/fastmiso/), [DEXSeq](http://bioconductor.org/packages/release/bioc/html/DEXSeq.html), [leafcutter](https://github.com/davidaknowles/leafcutter) and [MAJIQ](https://majiq.biociphers.org/) will be supported.
 
-### Development state
+## Development state
 
 Currently, only the following helper functions have been implemented:
   
@@ -32,16 +32,12 @@ Currently, only the following helper functions have been implemented:
 * plots results of getOverlap.R script in two barplots
 * **usage:** plotOverlapOverview(overlap, plotPrefix, outDir)
 
-**4. getBiomaRtAnnotation** (in helperFunctions.R)
+**4. getBiomaRtAnnotation** 
 
 * wrapper function for querying BioMart Ensembl database to extract gene annotation (e.g. coordinates, description)
 * **usage:** getBiomaRtAnnotation(identifierList, identifierType, species)
 
-**5. createUCSCtrack** (in helperFunctions.R)
+**5. createUCSCtrack**
 
 * creates a custom UCSC track from a genomic range object to view supplied coordinates in the [UCSC genome browser](https://genome.ucsc.edu/)
 * **usage:** createUCSCtrack(grObject, outFile, trackName, trackDescription)
-
-### Command for creating R environment
-
-conda create -p ./r-env -c r -c conda-forge -c bioconda r-base r-tidyr r-dplyr r-stringr r-purrr r-data.table  bioconductor-rtracklayer bioconductor-dexseq bioconductor-biomart bioconductor-BiocParallel
