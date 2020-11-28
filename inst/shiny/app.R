@@ -40,7 +40,13 @@ ui <- fluidPage(
                        plotOutput(outputId = "boxplot")),
 
       conditionalPanel(condition = "input.analysis == 'Pairwise Correlations'",
-                       plotOutput(outputId = "corrplot")),
+                       plotOutput(outputId = "corrplot"),
+                       selectInput(inputId = "corrMethod",
+                                   label = "Correlation method",
+                                   choices = c("pearson", "spearman", "kendall")),
+                       selectInput(inputId = "pAdjustMethod",
+                                   label = "P adjustment method",
+                                   choices = c("holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"))),
 
       width = 10
     )
@@ -70,7 +76,7 @@ server <- function(input, output) {
   ))
 
   output$exonSelection <- renderUI({
-    #if(is.null(input$psiData)) return(NULL)
+    if(is.null(input$psiData)) return(NULL)
     if(input$analysis == "Datatable") return(NULL)
 
     psiTable <- loadData()
@@ -119,19 +125,8 @@ server <- function(input, output) {
       spread(key = "eventName", value = "exonInclusion") %>%
       select(-sampleID) %>% as.matrix()
 
-    corr <- psych::corr.test(psiData, method = "spearman", adjust = "fdr")
+    makeCorrplot(psiData, method=input$corrMethod, adjust=input$pAdjustMethod)
 
-    # plot above diagonal correlations
-    corrplot(corr$r, p.mat = corr$p,
-             order = "original",
-             method = "color",
-             tl.pos = "td",
-             col = colorRampPalette(brewer.pal(n = 8, name = "PuOr"))(100),
-             tl.col="black",
-             tl.srt=60, # label rotation
-             type = "upper", # note: psych::corr.test stores adjusted p values above the diagnonal
-             insig = "label_sig", pch = "*", pch.cex = 0.7, sig.level = 0.05,
-             diag = TRUE)
   })
 }
 
